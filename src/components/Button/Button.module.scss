@@ -1,0 +1,18 @@
+.button {
+  @apply flex justify-center py-5 px-10 rounded font-bold text-2xl -tracking-tighter;
+}
+
+.button:hover {
+  @apply text-white;
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+}
+
+.bg {
+  @apply text-white;
+  background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+}
+
+.br {
+  @apply text-[#F75E05];
+  border: 1px solid #F75E05;
+}
