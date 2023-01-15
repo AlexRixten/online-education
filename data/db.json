@@ -2,7 +2,64 @@
   "courses": [
     {
       "id": 1,
-      "teacher": "Jerome Bell"
+      "teacher": {
+        "id": 1,
+        "name": "Jerome Bell",
+        "position": "Senior UX designer in IT Product Company",
+        "rating": 4.9,
+        "courses": 9,
+        "students": 350,
+        "description": "Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam. ",
+        "socials": [
+          {
+            "id": 1,
+            "name": "facebook",
+            "link": ""
+          },
+          {
+            "id": 2,
+            "name": "twitter",
+            "link": ""
+          },
+          {
+            "id": 3,
+            "name": "instagram",
+            "link": ""
+          },
+          {
+            "id": 4,
+            "name": "telegram",
+            "link": ""
+          }
+        ]
+      },
+      "description": "Bibendum vulputate adipiscing venenatis at est, a eu tincidunt. Leo aenean congue in sagittis, felis maecenas amet varius at. Pellentesque euismod in faucibus at elementum. Tellus maecenas libero est tempus sit cras at malesuada diam. Consequat senectus dictumst non hac dignissim montes, pretium, egestas molestie. Sed magna aliquet ornare nibh vel lectus diam eget pretium. Lorem risus nunc tincidunt tortor, mi nulla pellentesque",
+      "skills": [
+        {
+          "id": 1,
+          "title": "A fermentum in morbi pretium aliquam adipiscing donec tempus."
+        },
+        {
+          "id": 2,
+          "title": "Vulputate placerat amet pulvinar lorem nisl."
+        },
+        {
+          "id": 3,
+          "title": "Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed."
+        },
+        {
+          "id": 4,
+          "title": "Etiam duis lobortis in fames ultrices commodo nibh."
+        },
+        {
+          "id": 5,
+          "title": "Fringilla in nec risus congue venenatis pretium posuere nec."
+        },
+        {
+          "id": 6,
+          "title": "Cursus eu pretium, vulputate tempus quam massa sed at."
+        }
+      ]
     }
   ]
 }
