@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { authSelector } from "./store/selectors/auth";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { ERoutes } from "./enums/routes.enum";
-import { Button } from "./components/Button/Button";
+import { HomePage } from "./pages/HomePage";
 
 function App() {
     const { isAuth } = useSelector(authSelector);
@@ -17,7 +17,7 @@ function App() {
     }
     return (
       <Routes>
-          <Route path={ERoutes.Home} element={<Button path='/' text="Text" color={false}/>} />
+          <Route path={ERoutes.Home} element={<HomePage />} />
       </Routes>
     );
 }
