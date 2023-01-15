@@ -1,16 +1,14 @@
-import React, { ReactNode } from 'react';
-import './MainLayout.scss';
+import React, { ReactNode } from "react";
+import styles from "./MainLayout.module.scss";
 
 interface IProps {
 	children: ReactNode;
 }
 
-export default function Layout({ children }: IProps) {
+export const MainLayout = ({ children }: IProps) => {
 	return (
-		<div className="main-layout">
-			<div className="app-container">
-				<main>{children}</main>
-			</div>
+		<div className={styles.appContainer}>
+			<main>{children}</main>
 		</div>
 	);
-}
+};

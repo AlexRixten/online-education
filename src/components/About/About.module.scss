@@ -1,0 +1,15 @@
+.about {
+  @apply py-20;
+}
+
+.wrapper {
+  @apply flex flex-row gap-12 items-center;
+}
+
+.list {
+  @apply mt-10;
+}
+
+.listItem {
+  @apply flex items-center gap-6;
+}
