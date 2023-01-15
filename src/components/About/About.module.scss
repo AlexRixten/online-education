@@ -3,7 +3,7 @@
 }
 
 .wrapper {
-  @apply flex flex-row gap-12 items-center;
+  @apply flex flex-row gap-12 items-center -lg:flex-col;
 }
 
 .list {

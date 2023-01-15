@@ -3,7 +3,7 @@ import { authSelector } from "./store/selectors/auth";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { ERoutes } from "./enums/routes.enum";
 import { HomePage } from "./pages/Home/HomePage";
-import { MainLayout } from "./layouts/mainLayout/MainLayout";
+// import { MainLayout } from "./layouts/mainLayout/MainLayout";
 
 function App() {
 	const { isAuth } = useSelector(authSelector);
@@ -17,11 +17,11 @@ function App() {
 		);
 	}
 	return (
-		<MainLayout>
+		// <MainLayout>
 			<Routes>
 				<Route path={ERoutes.Home} element={<HomePage />} />
 			</Routes>
-		</MainLayout>
+		// </MainLayout>
 	);
 }
 

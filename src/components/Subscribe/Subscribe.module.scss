@@ -1,0 +1,15 @@
+.subscribe{
+  @apply pt-32 pb-32;
+  background: url("../../assets/Images/subscribe/Group 1.png") center center/cover no-repeat;
+}
+
+.form{
+  @apply mt-16 flex items-center justify-center gap-20;
+  input{
+    @apply bg-white rounded border-2 border-[#D7DADD] border-solid h-[72px] max-w-[450px] w-full px-5;
+  }
+  button{
+    @apply flex justify-center py-5 px-10 rounded font-bold text-2xl -tracking-tighter text-white;
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+  }
+}
