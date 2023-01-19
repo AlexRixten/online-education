@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { authSelector } from "./store/selectors/auth";
+import { authSelector } from "./store/selectors/authSelector";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { ERoutes } from "./enums/routes.enum";
 import { HomePage } from "./pages/Home/HomePage";
