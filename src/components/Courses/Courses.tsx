@@ -8,6 +8,8 @@ import { useEffect } from "react";
 import { fetchCourses } from "../../store/reducers/coursesReducer";
 import { coursesSelector } from "../../store/selectors/coursesSelector";
 import { useAppDispatch } from "../../store/hooks";
+import { CourseCard } from "./CourseCard/CourseCard";
+import { ICourses, ITeacher } from "../../interfaces/courses";
 
 
 export const Courses = () => {
@@ -31,7 +33,6 @@ export const Courses = () => {
 	return (
 		<section className={styles.courses}>
 			<div className="container">
-				<div className={styles.wrapper}>
 
 					<div className={styles.header}>
 						<div>
@@ -40,7 +41,13 @@ export const Courses = () => {
 						</div>
 						<Button path="\" text="More about us" color={false} style={{ width: 260 }} />
 					</div>
+
+				<div className={styles.wrapper}>
+					{courses?.courses?.map((item) => (
+						<CourseCard {...item.teacher} />
+					))}
 				</div>
+
 			</div>
 		</section>
 	);

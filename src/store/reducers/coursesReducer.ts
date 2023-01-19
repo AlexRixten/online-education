@@ -1,8 +1,9 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { EStatusLoading } from "../../enums/statusLoading.enum";
+import { ICoursesState } from "../../interfaces/courses";
 
-const initialState = {
+const initialState: ICoursesState = {
 	courses: [],
 	status: EStatusLoading.PENDING
 };

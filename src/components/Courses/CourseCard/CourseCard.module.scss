@@ -1,0 +1,9 @@
+.card {
+  @apply px-2 flex items-center justify-between max-w-[600px] w-full -xl:flex-row -xl:justify-center flex-wrap;
+  .cardImg {
+    @apply w-[200px] h-[200px];
+  }
+}
+.right{
+  @apply p-8 ;
+}

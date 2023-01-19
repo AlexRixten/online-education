@@ -2,14 +2,22 @@
   "courses": [
     {
       "id": 1,
+      "price": 100,
       "teacher": {
         "id": 1,
         "name": "Jerome Bell",
         "position": "Senior UX designer in IT Product Company",
-        "imgUrl": "https://thispersondoesnotexist.com/",
+        "imgUrl": "https://thispersondoesnotexist.com/image",
         "rating": 4.9,
         "courses": 9,
         "students": 350,
+        "tags": [
+          {
+            "id": 1,
+            "title": "Marketing"
+          }
+        ],
+        "descriptionCourse": "The Ultimate Google Ads Training Course",
         "description": "Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.",
         "socials": [
           {
