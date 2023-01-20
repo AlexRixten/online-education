@@ -1,17 +1,17 @@
 import styles from "./CourseCard.module.scss";
-import { ICourses, ITeacher } from "../../../interfaces/courses";
+import { ITeacher } from "../../../interfaces/courses";
+import { Tags } from "../../Tags/Tags";
+import { Link } from "react-router-dom";
 
 export const CourseCard = (props: ITeacher) => {
 	return (
-		<div className={styles.card}>
+		<Link to="/" className={styles.card}>
 			<img className={styles.cardImg} src={props.imgUrl} alt="teacher" />
 			<div className={styles.right}>
-				<p>{props.tags.map((item) => (
-					<p>{item.title}</p>
-				))}</p>
-				<p>{props.descriptionCourse}</p>
-				<p>{`$${props.price} | by ${props.name}`}</p>
+				<Tags {...props.tags}/>
+				<h3 className={styles.title}>{props.descriptionCourse}</h3>
+				<p className={styles.price}>{`$${props.price}`}<span> | by {props.name}</span></p>
 			</div>
-		</div>
+		</Link>
 	);
 };

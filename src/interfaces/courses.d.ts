@@ -8,6 +8,7 @@ export interface ISkill {
 export interface ITag {
 	id: number;
 	title: string;
+	color: string;
 }
 
 export interface ISocials {

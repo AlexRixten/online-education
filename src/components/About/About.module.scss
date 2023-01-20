@@ -12,4 +12,7 @@
 
 .listItem {
   @apply flex items-center gap-6;
+  svg{
+    @apply w-[16px] h-[16px];
+  }
 }
