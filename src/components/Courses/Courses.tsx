@@ -9,8 +9,6 @@ import { fetchCourses } from "../../store/reducers/coursesReducer";
 import { coursesSelector } from "../../store/selectors/coursesSelector";
 import { useAppDispatch } from "../../store/hooks";
 import { CourseCard } from "./CourseCard/CourseCard";
-import { ICourses, ITeacher } from "../../interfaces/courses";
-
 
 export const Courses = () => {
 	const dispatch = useAppDispatch()
