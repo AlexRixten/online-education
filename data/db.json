@@ -1050,5 +1050,48 @@
     }
   ],
   "blogs": [],
-  "lectures": []
+  "lectures": [
+    {
+      "id": 1,
+      "date": "05.08.2022",
+      "gap": "11:00 - 14:00",
+      "title": "Formation of the organizational structure of the company in the face of uncertainty.",
+      "lesson": "Online master-class"
+    },
+    {
+      "id": 2,
+      "date": "24.07.2022",
+      "gap": "11:00 - 12:30",
+      "title": "Building a customer service department. Best Practices.",
+      "lesson": "Online lecture"
+    },
+    {
+      "id": 3,
+      "date": "16.07.2022",
+      "gap": "10:00 - 13:00",
+      "title": "How to apply methods of speculative design in practice. World building prototyping.",
+      "lesson": "Online workshop"
+    },
+    {
+      "id": 4,
+      "date": "05.08.2022",
+      "gap": "11:00 - 14:00",
+      "title": "Formation of the organizational structure of the company in the face of uncertainty.",
+      "lesson": "Online master-class"
+    },
+    {
+      "id": 5,
+      "date": "24.07.2022",
+      "gap": "11:00 - 12:30",
+      "title": "Building a customer service department. Best Practices.",
+      "lesson": "Online lecture"
+    },
+    {
+      "id": 6,
+      "date": "16.07.2022",
+      "gap": "10:00 - 13:00",
+      "title": "How to apply methods of speculative design in practice. World building prototyping.",
+      "lesson": "Online workshop"
+    }
+  ]
 }

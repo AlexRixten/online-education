@@ -2,11 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { EStatusLoading } from "../../enums/statusLoading.enum";
 import { ICoursesState } from "../../interfaces/courses";
-
-interface IParameters{
-	page?: number;
-	limit?: number;
-}
+import { IParameters } from "../../interfaces/global";
 
 const initialState: ICoursesState = {
 	courses: [],

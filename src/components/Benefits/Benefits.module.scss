@@ -1,0 +1,25 @@
+.benefits {
+  @apply py-20;
+}
+
+.wrapper {
+  @apply flex items-center justify-between -lg:flex-col -lg:gap-[30px];
+}
+
+.description {
+  @apply max-w-[500px] w-full flex flex-col gap-[24px];
+}
+
+.group {
+  @apply flex my-16 flex-wrap items-center justify-center;
+  .groupItem {
+    @apply flex gap-[8px] items-center /*cursor-pointer*/
+    h-[45px] w-full max-w-[300px] items-center justify-center;
+    &:hover {
+      @apply text-[#FF3F3A] rounded border-solid border-[1px] border-[#FF3F3A];
+      svg {
+        fill: #FF3F3A;
+      }
+    }
+  }
+}

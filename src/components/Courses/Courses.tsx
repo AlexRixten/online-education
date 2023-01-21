@@ -26,8 +26,6 @@ export const Courses = () => {
 		getCourses();
 	}, []);
 
-	console.log('courses', courses);
-
 	return (
 		<section className={styles.courses}>
 			<div className="container">

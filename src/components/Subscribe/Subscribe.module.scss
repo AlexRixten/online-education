@@ -4,7 +4,7 @@
 }
 
 .form{
-  @apply mt-16 flex items-center justify-center gap-20;
+  @apply mt-16 flex items-center justify-center gap-20 -md:flex-col;
   input{
     @apply bg-white rounded border-2 border-[#D7DADD] border-solid h-[72px] max-w-[450px] w-full px-5;
   }
