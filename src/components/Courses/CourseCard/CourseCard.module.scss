@@ -1,5 +1,5 @@
 .card {
-  @apply px-2 flex items-center justify-between max-w-[600px] min-h-[214px] w-full -sm:flex-col -xl:justify-center rounded bg-white border-solid border-[1px] border-[#E5E8ED];
+  @apply px-2 flex items-center justify-start max-w-[600px] min-h-[214px] w-full -sm:flex-col rounded bg-white border-solid border-[1px] border-[#E5E8ED];
   box-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
 
   &:hover {

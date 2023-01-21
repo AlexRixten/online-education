@@ -5,8 +5,520 @@
       "teacher": {
         "id": 1,
         "name": "Jerome Bell",
-        "position": "Senior UX designer in IT Product Company",
-        "imgUrl": "https://thispersondoesnotexist.com/image",
+        "position": "Founder and Program Director",
+        "imgUrl": "https://lk.99ballov.ru/images/user/86477/avatar.png?67d1bc20270235ead34c43a9fed9be80",
+        "rating": 4.9,
+        "courses": 9,
+        "students": 350,
+        "price": 100,
+        "tags": [
+          {
+            "id": 1,
+            "title": "Marketing",
+            "color": "#03CEA4"
+          }
+        ],
+        "descriptionCourse": "The Ultimate Google Ads Training Course",
+        "description": "Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.",
+        "socials": [
+          {
+            "id": 1,
+            "name": "facebook",
+            "link": ""
+          },
+          {
+            "id": 2,
+            "name": "twitter",
+            "link": ""
+          },
+          {
+            "id": 3,
+            "name": "instagram",
+            "link": ""
+          },
+          {
+            "id": 4,
+            "name": "telegram",
+            "link": ""
+          }
+        ]
+      },
+      "description": "Bibendum vulputate adipiscing venenatis at est, a eu tincidunt. Leo aenean congue in sagittis, felis maecenas amet varius at. Pellentesque euismod in faucibus at elementum. Tellus maecenas libero est tempus sit cras at malesuada diam. Consequat senectus dictumst non hac dignissim montes, pretium, egestas molestie. Sed magna aliquet ornare nibh vel lectus diam eget pretium. Lorem risus nunc tincidunt tortor, mi nulla pellentesque",
+      "skills": [
+        {
+          "id": 1,
+          "title": "A fermentum in morbi pretium aliquam adipiscing donec tempus."
+        },
+        {
+          "id": 2,
+          "title": "Vulputate placerat amet pulvinar lorem nisl."
+        },
+        {
+          "id": 3,
+          "title": "Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed."
+        },
+        {
+          "id": 4,
+          "title": "Etiam duis lobortis in fames ultrices commodo nibh."
+        },
+        {
+          "id": 5,
+          "title": "Fringilla in nec risus congue venenatis pretium posuere nec."
+        },
+        {
+          "id": 6,
+          "title": "Cursus eu pretium, vulputate tempus quam massa sed at."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "teacher":{
+        "id": 2,
+        "name": "Dianne Russell",
+        "position": "Founder and CEO",
+        "imgUrl": "https://lk.99ballov.ru/images/user/178/avatar.png?2f6190d7eb92ef8f385b7ed8769f8153",
+        "rating": 4.9,
+        "courses": 9,
+        "students": 350,
+        "price": 480,
+        "tags": [
+          {
+            "id": 3,
+            "title": "Management",
+            "color": "#5A87FC"
+          }
+        ],
+        "descriptionCourse": "Prduct Management Fundamentals",
+        "description": "Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.",
+        "socials": [
+          {
+            "id": 1,
+            "name": "facebook",
+            "link": ""
+          },
+          {
+            "id": 2,
+            "name": "twitter",
+            "link": ""
+          },
+          {
+            "id": 3,
+            "name": "instagram",
+            "link": ""
+          },
+          {
+            "id": 4,
+            "name": "telegram",
+            "link": ""
+          }
+        ]
+      },
+      "description": "Bibendum vulputate adipiscing venenatis at est, a eu tincidunt. Leo aenean congue in sagittis, felis maecenas amet varius at. Pellentesque euismod in faucibus at elementum. Tellus maecenas libero est tempus sit cras at malesuada diam. Consequat senectus dictumst non hac dignissim montes, pretium, egestas molestie. Sed magna aliquet ornare nibh vel lectus diam eget pretium. Lorem risus nunc tincidunt tortor, mi nulla pellentesque",
+      "skills": [
+        {
+          "id": 1,
+          "title": "A fermentum in morbi pretium aliquam adipiscing donec tempus."
+        },
+        {
+          "id": 2,
+          "title": "Vulputate placerat amet pulvinar lorem nisl."
+        },
+        {
+          "id": 3,
+          "title": "Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed."
+        },
+        {
+          "id": 4,
+          "title": "Etiam duis lobortis in fames ultrices commodo nibh."
+        },
+        {
+          "id": 5,
+          "title": "Fringilla in nec risus congue venenatis pretium posuere nec."
+        },
+        {
+          "id": 6,
+          "title": "Cursus eu pretium, vulputate tempus quam massa sed at."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "teacher":{
+        "id": 3,
+        "name": "Kristin Watson",
+        "position": "Marketer, Curator of Marketing Course",
+        "imgUrl": "https://lk.99ballov.ru/images/user/98/avatar.png?015770e8519373eb7d345acc2a235dc2",
+        "rating": 4.9,
+        "courses": 9,
+        "students": 350,
+        "price": 200,
+        "tags": [
+          {
+            "id": 2,
+            "title": "HR & Recruting",
+            "color": "#F89828"
+          }
+        ],
+        "descriptionCourse": "HR  Management and Analytics",
+        "description": "Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.",
+        "socials": [
+          {
+            "id": 1,
+            "name": "facebook",
+            "link": ""
+          },
+          {
+            "id": 2,
+            "name": "twitter",
+            "link": ""
+          },
+          {
+            "id": 3,
+            "name": "instagram",
+            "link": ""
+          },
+          {
+            "id": 4,
+            "name": "telegram",
+            "link": ""
+          }
+        ]
+      },
+      "description": "Bibendum vulputate adipiscing venenatis at est, a eu tincidunt. Leo aenean congue in sagittis, felis maecenas amet varius at. Pellentesque euismod in faucibus at elementum. Tellus maecenas libero est tempus sit cras at malesuada diam. Consequat senectus dictumst non hac dignissim montes, pretium, egestas molestie. Sed magna aliquet ornare nibh vel lectus diam eget pretium. Lorem risus nunc tincidunt tortor, mi nulla pellentesque",
+      "skills": [
+        {
+          "id": 1,
+          "title": "A fermentum in morbi pretium aliquam adipiscing donec tempus."
+        },
+        {
+          "id": 2,
+          "title": "Vulputate placerat amet pulvinar lorem nisl."
+        },
+        {
+          "id": 3,
+          "title": "Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed."
+        },
+        {
+          "id": 4,
+          "title": "Etiam duis lobortis in fames ultrices commodo nibh."
+        },
+        {
+          "id": 5,
+          "title": "Fringilla in nec risus congue venenatis pretium posuere nec."
+        },
+        {
+          "id": 6,
+          "title": "Cursus eu pretium, vulputate tempus quam massa sed at."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "teacher":{
+        "id": 4,
+        "name": "Marvin McKinney",
+        "position": "PM, Curator of Management Course",
+        "imgUrl": "https://lk.99ballov.ru/images/user/1110/avatar.png?886dd11de2d60f0b01564d9bcc16477d",
+        "rating": 4.9,
+        "courses": 9,
+        "students": 350,
+        "price": 530,
+        "tags": [
+          {
+            "id": 1,
+            "title": "Marketing",
+            "color": "#03CEA4"
+          }
+        ],
+        "descriptionCourse": "Brand Management & PR Communications",
+        "description": "Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.",
+        "socials": [
+          {
+            "id": 1,
+            "name": "facebook",
+            "link": ""
+          },
+          {
+            "id": 2,
+            "name": "twitter",
+            "link": ""
+          },
+          {
+            "id": 3,
+            "name": "instagram",
+            "link": ""
+          },
+          {
+            "id": 4,
+            "name": "telegram",
+            "link": ""
+          }
+        ]
+      },
+      "description": "Bibendum vulputate adipiscing venenatis at est, a eu tincidunt. Leo aenean congue in sagittis, felis maecenas amet varius at. Pellentesque euismod in faucibus at elementum. Tellus maecenas libero est tempus sit cras at malesuada diam. Consequat senectus dictumst non hac dignissim montes, pretium, egestas molestie. Sed magna aliquet ornare nibh vel lectus diam eget pretium. Lorem risus nunc tincidunt tortor, mi nulla pellentesque",
+      "skills": [
+        {
+          "id": 1,
+          "title": "A fermentum in morbi pretium aliquam adipiscing donec tempus."
+        },
+        {
+          "id": 2,
+          "title": "Vulputate placerat amet pulvinar lorem nisl."
+        },
+        {
+          "id": 3,
+          "title": "Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed."
+        },
+        {
+          "id": 4,
+          "title": "Etiam duis lobortis in fames ultrices commodo nibh."
+        },
+        {
+          "id": 5,
+          "title": "Fringilla in nec risus congue venenatis pretium posuere nec."
+        },
+        {
+          "id": 6,
+          "title": "Cursus eu pretium, vulputate tempus quam massa sed at."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "teacher":{
+        "id": 5,
+        "name": "Leslie Alexander Li",
+        "position": "Curator of HR & Recruting Course",
+        "imgUrl": "https://lk.99ballov.ru/images/user/2127/avatar.png?54efd435ae4880df7d08e0b93febc7f9",
+        "rating": 4.9,
+        "courses": 9,
+        "students": 350,
+        "price": 400,
+        "tags": [
+          {
+            "id": 3,
+            "title": "Management",
+            "color": "#5A87FC"
+          }
+        ],
+        "descriptionCourse": "Business Development Management",
+        "description": "Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.",
+        "socials": [
+          {
+            "id": 1,
+            "name": "facebook",
+            "link": ""
+          },
+          {
+            "id": 2,
+            "name": "twitter",
+            "link": ""
+          },
+          {
+            "id": 3,
+            "name": "instagram",
+            "link": ""
+          },
+          {
+            "id": 4,
+            "name": "telegram",
+            "link": ""
+          }
+        ]
+      },
+      "description": "Bibendum vulputate adipiscing venenatis at est, a eu tincidunt. Leo aenean congue in sagittis, felis maecenas amet varius at. Pellentesque euismod in faucibus at elementum. Tellus maecenas libero est tempus sit cras at malesuada diam. Consequat senectus dictumst non hac dignissim montes, pretium, egestas molestie. Sed magna aliquet ornare nibh vel lectus diam eget pretium. Lorem risus nunc tincidunt tortor, mi nulla pellentesque",
+      "skills": [
+        {
+          "id": 1,
+          "title": "A fermentum in morbi pretium aliquam adipiscing donec tempus."
+        },
+        {
+          "id": 2,
+          "title": "Vulputate placerat amet pulvinar lorem nisl."
+        },
+        {
+          "id": 3,
+          "title": "Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed."
+        },
+        {
+          "id": 4,
+          "title": "Etiam duis lobortis in fames ultrices commodo nibh."
+        },
+        {
+          "id": 5,
+          "title": "Fringilla in nec risus congue venenatis pretium posuere nec."
+        },
+        {
+          "id": 6,
+          "title": "Cursus eu pretium, vulputate tempus quam massa sed at."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "teacher":{
+        "id": 6,
+        "name": "Kathryn Murphy",
+        "position": "Analyst and Marketing specialist",
+        "imgUrl": "https://lk.99ballov.ru/images/user/66456/avatar.png?022f8e4fae60963c51611fb605891578",
+        "rating": 4.9,
+        "courses": 9,
+        "students": 350,
+        "price": 500,
+        "tags": [
+          {
+            "id": 4,
+            "title": "Design",
+            "color": "#F52F6E"
+          }
+        ],
+        "descriptionCourse": "Graphic Design Basic",
+        "description": "Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.",
+        "socials": [
+          {
+            "id": 1,
+            "name": "facebook",
+            "link": ""
+          },
+          {
+            "id": 2,
+            "name": "twitter",
+            "link": ""
+          },
+          {
+            "id": 3,
+            "name": "instagram",
+            "link": ""
+          },
+          {
+            "id": 4,
+            "name": "telegram",
+            "link": ""
+          }
+        ]
+      },
+      "description": "Bibendum vulputate adipiscing venenatis at est, a eu tincidunt. Leo aenean congue in sagittis, felis maecenas amet varius at. Pellentesque euismod in faucibus at elementum. Tellus maecenas libero est tempus sit cras at malesuada diam. Consequat senectus dictumst non hac dignissim montes, pretium, egestas molestie. Sed magna aliquet ornare nibh vel lectus diam eget pretium. Lorem risus nunc tincidunt tortor, mi nulla pellentesque",
+      "skills": [
+        {
+          "id": 1,
+          "title": "A fermentum in morbi pretium aliquam adipiscing donec tempus."
+        },
+        {
+          "id": 2,
+          "title": "Vulputate placerat amet pulvinar lorem nisl."
+        },
+        {
+          "id": 3,
+          "title": "Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed."
+        },
+        {
+          "id": 4,
+          "title": "Etiam duis lobortis in fames ultrices commodo nibh."
+        },
+        {
+          "id": 5,
+          "title": "Fringilla in nec risus congue venenatis pretium posuere nec."
+        },
+        {
+          "id": 6,
+          "title": "Cursus eu pretium, vulputate tempus quam massa sed at."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "teacher":{
+        "id": 7,
+        "name": "Brooklyn Simmons",
+        "position": "Curator of Development Course",
+        "imgUrl": "https://lk.99ballov.ru/images/user/49077/avatar.png?190ad9a9406691c7caf26fa2a6bc3ede",
+        "rating": 4.9,
+        "courses": 9,
+        "students": 350,
+        "price": 100,
+        "tags": [
+          {
+            "id": 1,
+            "title": "Marketing",
+            "color": "#03CEA4"
+          },
+          {
+            "id": 2,
+            "title": "HR & Recruting",
+            "color": "#F89828"
+          },
+          {
+            "id": 3,
+            "title": "Management",
+            "color": "#5A87FC"
+          },
+          {
+            "id": 4,
+            "title": "Design",
+            "color": "#F52F6E"
+          }
+        ],
+        "descriptionCourse": "The Ultimate Google Ads Training Course",
+        "description": "Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.",
+        "socials": [
+          {
+            "id": 1,
+            "name": "facebook",
+            "link": ""
+          },
+          {
+            "id": 2,
+            "name": "twitter",
+            "link": ""
+          },
+          {
+            "id": 3,
+            "name": "instagram",
+            "link": ""
+          },
+          {
+            "id": 4,
+            "name": "telegram",
+            "link": ""
+          }
+        ]
+      },
+      "description": "Bibendum vulputate adipiscing venenatis at est, a eu tincidunt. Leo aenean congue in sagittis, felis maecenas amet varius at. Pellentesque euismod in faucibus at elementum. Tellus maecenas libero est tempus sit cras at malesuada diam. Consequat senectus dictumst non hac dignissim montes, pretium, egestas molestie. Sed magna aliquet ornare nibh vel lectus diam eget pretium. Lorem risus nunc tincidunt tortor, mi nulla pellentesque",
+      "skills": [
+        {
+          "id": 1,
+          "title": "A fermentum in morbi pretium aliquam adipiscing donec tempus."
+        },
+        {
+          "id": 2,
+          "title": "Vulputate placerat amet pulvinar lorem nisl."
+        },
+        {
+          "id": 3,
+          "title": "Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed."
+        },
+        {
+          "id": 4,
+          "title": "Etiam duis lobortis in fames ultrices commodo nibh."
+        },
+        {
+          "id": 5,
+          "title": "Fringilla in nec risus congue venenatis pretium posuere nec."
+        },
+        {
+          "id": 6,
+          "title": "Cursus eu pretium, vulputate tempus quam massa sed at."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "teacher":{
+        "id": 8,
+        "name": "Cody Fisher",
+        "position": "UX Designer, Curator of Design Course",
+        "imgUrl": "https://lk.99ballov.ru/images/user/57634/avatar.png?f7aba704119654e75c56dcdca0618369",
         "rating": 4.9,
         "courses": 9,
         "students": 350,
@@ -86,5 +598,457 @@
         }
       ]
     }
-  ]
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Jerome Bell",
+      "position": "Founder and Program Director",
+      "imgUrl": "https://lk.99ballov.ru/images/user/86477/avatar.png?67d1bc20270235ead34c43a9fed9be80",
+      "rating": 4.9,
+      "courses": 9,
+      "students": 350,
+      "price": 100,
+      "tags": [
+        {
+          "id": 1,
+          "title": "Marketing",
+          "color": "#03CEA4"
+        },
+        {
+          "id": 2,
+          "title": "HR & Recruting",
+          "color": "#F89828"
+        },
+        {
+          "id": 3,
+          "title": "Management",
+          "color": "#5A87FC"
+        },
+        {
+          "id": 4,
+          "title": "Design",
+          "color": "#F52F6E"
+        }
+      ],
+      "descriptionCourse": "The Ultimate Google Ads Training Course",
+      "description": "Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.",
+      "socials": [
+        {
+          "id": 1,
+          "name": "facebook",
+          "link": ""
+        },
+        {
+          "id": 2,
+          "name": "twitter",
+          "link": ""
+        },
+        {
+          "id": 3,
+          "name": "instagram",
+          "link": ""
+        },
+        {
+          "id": 4,
+          "name": "telegram",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Dianne Russell",
+      "position": "Founder and CEO",
+      "imgUrl": "https://lk.99ballov.ru/images/user/178/avatar.png?2f6190d7eb92ef8f385b7ed8769f8153",
+      "rating": 4.9,
+      "courses": 9,
+      "students": 350,
+      "price": 100,
+      "tags": [
+        {
+          "id": 1,
+          "title": "Marketing",
+          "color": "#03CEA4"
+        },
+        {
+          "id": 2,
+          "title": "HR & Recruting",
+          "color": "#F89828"
+        },
+        {
+          "id": 3,
+          "title": "Management",
+          "color": "#5A87FC"
+        },
+        {
+          "id": 4,
+          "title": "Design",
+          "color": "#F52F6E"
+        }
+      ],
+      "descriptionCourse": "The Ultimate Google Ads Training Course",
+      "description": "Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.",
+      "socials": [
+        {
+          "id": 1,
+          "name": "facebook",
+          "link": ""
+        },
+        {
+          "id": 2,
+          "name": "twitter",
+          "link": ""
+        },
+        {
+          "id": 3,
+          "name": "instagram",
+          "link": ""
+        },
+        {
+          "id": 4,
+          "name": "telegram",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Kristin Watson",
+      "position": "Marketer, Curator of Marketing Course",
+      "imgUrl": "https://lk.99ballov.ru/images/user/98/avatar.png?015770e8519373eb7d345acc2a235dc2",
+      "rating": 4.9,
+      "courses": 9,
+      "students": 350,
+      "price": 100,
+      "tags": [
+        {
+          "id": 1,
+          "title": "Marketing",
+          "color": "#03CEA4"
+        },
+        {
+          "id": 2,
+          "title": "HR & Recruting",
+          "color": "#F89828"
+        },
+        {
+          "id": 3,
+          "title": "Management",
+          "color": "#5A87FC"
+        },
+        {
+          "id": 4,
+          "title": "Design",
+          "color": "#F52F6E"
+        }
+      ],
+      "descriptionCourse": "The Ultimate Google Ads Training Course",
+      "description": "Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.",
+      "socials": [
+        {
+          "id": 1,
+          "name": "facebook",
+          "link": ""
+        },
+        {
+          "id": 2,
+          "name": "twitter",
+          "link": ""
+        },
+        {
+          "id": 3,
+          "name": "instagram",
+          "link": ""
+        },
+        {
+          "id": 4,
+          "name": "telegram",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Marvin McKinney",
+      "position": "PM, Curator of Management Course",
+      "imgUrl": "https://lk.99ballov.ru/images/user/1110/avatar.png?886dd11de2d60f0b01564d9bcc16477d",
+      "rating": 4.9,
+      "courses": 9,
+      "students": 350,
+      "price": 100,
+      "tags": [
+        {
+          "id": 1,
+          "title": "Marketing",
+          "color": "#03CEA4"
+        },
+        {
+          "id": 2,
+          "title": "HR & Recruting",
+          "color": "#F89828"
+        },
+        {
+          "id": 3,
+          "title": "Management",
+          "color": "#5A87FC"
+        },
+        {
+          "id": 4,
+          "title": "Design",
+          "color": "#F52F6E"
+        }
+      ],
+      "descriptionCourse": "The Ultimate Google Ads Training Course",
+      "description": "Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.",
+      "socials": [
+        {
+          "id": 1,
+          "name": "facebook",
+          "link": ""
+        },
+        {
+          "id": 2,
+          "name": "twitter",
+          "link": ""
+        },
+        {
+          "id": 3,
+          "name": "instagram",
+          "link": ""
+        },
+        {
+          "id": 4,
+          "name": "telegram",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Leslie Alexander Li",
+      "position": "Curator of HR & Recruting Course",
+      "imgUrl": "https://lk.99ballov.ru/images/user/2127/avatar.png?54efd435ae4880df7d08e0b93febc7f9",
+      "rating": 4.9,
+      "courses": 9,
+      "students": 350,
+      "price": 100,
+      "tags": [
+        {
+          "id": 1,
+          "title": "Marketing",
+          "color": "#03CEA4"
+        },
+        {
+          "id": 2,
+          "title": "HR & Recruting",
+          "color": "#F89828"
+        },
+        {
+          "id": 3,
+          "title": "Management",
+          "color": "#5A87FC"
+        },
+        {
+          "id": 4,
+          "title": "Design",
+          "color": "#F52F6E"
+        }
+      ],
+      "descriptionCourse": "The Ultimate Google Ads Training Course",
+      "description": "Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.",
+      "socials": [
+        {
+          "id": 1,
+          "name": "facebook",
+          "link": ""
+        },
+        {
+          "id": 2,
+          "name": "twitter",
+          "link": ""
+        },
+        {
+          "id": 3,
+          "name": "instagram",
+          "link": ""
+        },
+        {
+          "id": 4,
+          "name": "telegram",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Kathryn Murphy",
+      "position": "Analyst and Marketing specialist",
+      "imgUrl": "https://lk.99ballov.ru/images/user/66456/avatar.png?022f8e4fae60963c51611fb605891578",
+      "rating": 4.9,
+      "courses": 9,
+      "students": 350,
+      "price": 100,
+      "tags": [
+        {
+          "id": 1,
+          "title": "Marketing",
+          "color": "#03CEA4"
+        },
+        {
+          "id": 2,
+          "title": "HR & Recruting",
+          "color": "#F89828"
+        },
+        {
+          "id": 3,
+          "title": "Management",
+          "color": "#5A87FC"
+        },
+        {
+          "id": 4,
+          "title": "Design",
+          "color": "#F52F6E"
+        }
+      ],
+      "descriptionCourse": "The Ultimate Google Ads Training Course",
+      "description": "Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.",
+      "socials": [
+        {
+          "id": 1,
+          "name": "facebook",
+          "link": ""
+        },
+        {
+          "id": 2,
+          "name": "twitter",
+          "link": ""
+        },
+        {
+          "id": 3,
+          "name": "instagram",
+          "link": ""
+        },
+        {
+          "id": 4,
+          "name": "telegram",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Brooklyn Simmons",
+      "position": "Curator of Development Course",
+      "imgUrl": "https://lk.99ballov.ru/images/user/49077/avatar.png?190ad9a9406691c7caf26fa2a6bc3ede",
+      "rating": 4.9,
+      "courses": 9,
+      "students": 350,
+      "price": 100,
+      "tags": [
+        {
+          "id": 1,
+          "title": "Marketing",
+          "color": "#03CEA4"
+        },
+        {
+          "id": 2,
+          "title": "HR & Recruting",
+          "color": "#F89828"
+        },
+        {
+          "id": 3,
+          "title": "Management",
+          "color": "#5A87FC"
+        },
+        {
+          "id": 4,
+          "title": "Design",
+          "color": "#F52F6E"
+        }
+      ],
+      "descriptionCourse": "The Ultimate Google Ads Training Course",
+      "description": "Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.",
+      "socials": [
+        {
+          "id": 1,
+          "name": "facebook",
+          "link": ""
+        },
+        {
+          "id": 2,
+          "name": "twitter",
+          "link": ""
+        },
+        {
+          "id": 3,
+          "name": "instagram",
+          "link": ""
+        },
+        {
+          "id": 4,
+          "name": "telegram",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Cody Fisher",
+      "position": "UX Designer, Curator of Design Course",
+      "imgUrl": "https://lk.99ballov.ru/images/user/57634/avatar.png?f7aba704119654e75c56dcdca0618369",
+      "rating": 4.9,
+      "courses": 9,
+      "students": 350,
+      "price": 100,
+      "tags": [
+        {
+          "id": 1,
+          "title": "Marketing",
+          "color": "#03CEA4"
+        },
+        {
+          "id": 2,
+          "title": "HR & Recruting",
+          "color": "#F89828"
+        },
+        {
+          "id": 3,
+          "title": "Management",
+          "color": "#5A87FC"
+        },
+        {
+          "id": 4,
+          "title": "Design",
+          "color": "#F52F6E"
+        }
+      ],
+      "descriptionCourse": "The Ultimate Google Ads Training Course",
+      "description": "Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique sollicitudin interdum quam.",
+      "socials": [
+        {
+          "id": 1,
+          "name": "facebook",
+          "link": ""
+        },
+        {
+          "id": 2,
+          "name": "twitter",
+          "link": ""
+        },
+        {
+          "id": 3,
+          "name": "instagram",
+          "link": ""
+        },
+        {
+          "id": 4,
+          "name": "telegram",
+          "link": ""
+        }
+      ]
+    }
+  ],
+  "blogs": [],
+  "lectures": []
 }

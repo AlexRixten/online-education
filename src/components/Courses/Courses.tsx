@@ -18,7 +18,7 @@ export const Courses = () => {
 	useEffect(() => {
 		const getCourses = async () => {
 			try {
-				dispatch(fetchCourses());
+				dispatch(fetchCourses({limit: 6}));
 			} catch (error) {
 				console.log(error);
 			}

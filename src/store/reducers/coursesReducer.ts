@@ -3,13 +3,26 @@ import axios from "axios";
 import { EStatusLoading } from "../../enums/statusLoading.enum";
 import { ICoursesState } from "../../interfaces/courses";
 
+interface IParameters{
+	page?: number;
+	limit?: number;
+}
+
 const initialState: ICoursesState = {
 	courses: [],
 	status: EStatusLoading.PENDING
 };
 
-export const fetchCourses = createAsyncThunk("courses/fetchCourses", async () => {
-	const response = await axios.get("http://localhost:3001/courses");
+export const fetchCourses = createAsyncThunk("courses/fetchCourses", async (parameters:IParameters) => {
+	const {page, limit} = parameters
+	let queryParameters: string = ''
+	if(page){
+		queryParameters += `_page=${page}`
+	}
+	if(limit){
+		queryParameters += `_limit=${limit}`
+	}
+	const response = await axios.get(`http://localhost:3001/courses${queryParameters ? `/?${queryParameters}` : ''}`);
 	return response.data;
 });
 

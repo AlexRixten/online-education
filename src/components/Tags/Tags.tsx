@@ -8,7 +8,7 @@ export const Tags = (props: ITag[]) => {
 	return (
 		<div className={styles.tags}>
 			{Object.values(props)?.map((tag) => (
-				<Tag id={tag.id} title={tag.title} color={tag.color} />
+				<Tag key={tag.id} {...tag} />
 			))}
 		</div>
 	);
