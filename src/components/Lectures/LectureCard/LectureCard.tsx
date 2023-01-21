@@ -5,6 +5,6 @@ import styles from "./LectureCard.module.scss";
 
 export const LectureCard = (props : ILecture) => {
 	return (
-		<>LectureCard</>
+		<div className={styles.lectureCard}></div>
 	);
 };
