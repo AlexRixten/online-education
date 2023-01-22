@@ -12,7 +12,7 @@ import { EventsPage } from "./pages/Events/EventsPage";
 import { EventPage } from "./pages/Event/EventPage";
 import { PostPage } from "./pages/Post/PostPage";
 import { NotFoundPage } from "./pages/NotFound/NotFoundPage";
-// import { MainLayout } from "./layouts/mainLayout/MainLayout";
+import { MainLayout } from "./layouts/mainLayout/MainLayout";
 
 function App() {
 	const { isAuth } = useSelector(authSelector);
@@ -26,20 +26,20 @@ function App() {
 		);
 	}
 	return (
-		// <MainLayout>
+		<MainLayout>
 			<Routes>
 				<Route path={ERoutes.Home} element={<HomePage />} />
 				<Route path={ERoutes.AboutUs} element={<AboutUsPage />} />
 				<Route path={ERoutes.Blogs} element={<BlogPage />} />
 				<Route path={ERoutes.Contacts} element={<ContactsPage />} />
-				<Route path={ERoutes.Course} element={<CoursePage />} />
+				<Route path={`${ERoutes.Course}/:courseId`} element={<CoursePage />} />
 				<Route path={ERoutes.Courses} element={<CoursesPage />} />
 				<Route path={ERoutes.Events} element={<EventsPage />} />
-				<Route path={ERoutes.Event} element={<EventPage />} />
-				<Route path={ERoutes.Post} element={<PostPage />} />
+				<Route path={`${ERoutes.Event}/:eventId`} element={<EventPage />} />
+				<Route path={`${ERoutes.Post}/:postId`} element={<PostPage />} />
 				<Route path={ERoutes.NotFound} element={<NotFoundPage />} />
 			</Routes>
-		// </MainLayout>
+		</MainLayout>
 	);
 }
 

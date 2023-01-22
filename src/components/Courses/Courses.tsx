@@ -9,6 +9,7 @@ import { fetchCourses } from "../../store/reducers/coursesReducer";
 import { coursesSelector } from "../../store/selectors/coursesSelector";
 import { useAppDispatch } from "../../store/hooks";
 import { CourseCard } from "./CourseCard/CourseCard";
+import { ERoutes } from "../../enums/routes.enum";
 
 export const Courses = () => {
 	const dispatch = useAppDispatch()
@@ -35,7 +36,7 @@ export const Courses = () => {
 							<Title text="Ready to learn?" />
 							<Subtitle text="Featured Courses" />
 						</div>
-						<Button path="\" text="More about us" color={false} style={{ width: 260 }} />
+						<Button path={ERoutes.AboutUs} text="More about us" color={false} style={{ width: 260 }} />
 					</div>
 
 				<div className={styles.wrapper}>

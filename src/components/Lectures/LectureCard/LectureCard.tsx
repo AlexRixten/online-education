@@ -2,6 +2,7 @@ import { ILecture } from "../../../interfaces/lectures";
 
 import styles from "./LectureCard.module.scss";
 import { Button } from "../../Button/Button";
+import { ERoutes } from "../../../enums/routes.enum";
 
 const monthArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -22,7 +23,7 @@ export const LectureCard = (props: ILecture) => {
 					<div className={styles.title}>{title}</div>
 					<div className={styles.subtitle}>{lesson}</div>
 				</div>
-				<Button path="/" text="View more" color={false}
+				<Button path={`${ERoutes.Event}/${id}`} text="View more" color={false}
 								style={{ maxWidth: 136, height: 44, fontSize: 14, padding: 5, width: "100%" }} />
 			</div>
 		</div>

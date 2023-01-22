@@ -5,6 +5,7 @@ import img from "../../assets/Images/about/image.jpg";
 import styles from "./About.module.scss";
 import { Icon } from "../Icon";
 import { Button } from "../Button/Button";
+import { ERoutes } from "../../enums/routes.enum";
 
 export const About = () => {
 	return (
@@ -43,7 +44,7 @@ export const About = () => {
 								<p>Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</p>
 							</li>
 						</ul>
-						<Button path="\" text="More about us" color={true} style={{ marginTop: 22, width: 260 }} />
+						<Button path={ERoutes.AboutUs} text="More about us" color={true} style={{ marginTop: 22, width: 260 }} />
 					</div>
 				</div>
 			</div>

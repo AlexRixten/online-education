@@ -5,9 +5,9 @@ export enum ERoutes {
 	Blogs = '/blogs',
 	Courses = '/courses',
 	Events = '/events',
-	Course = '/course/:courseId',
-	Event = '/event/:eventId',
+	Course = '/course',
+	Event = '/event',
 	AboutUs = '/about_us',
-	Post = '/post/:postId',
+	Post = '/post',
 	NotFound = '/not_found',
 }

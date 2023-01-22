@@ -1,0 +1,18 @@
+.header {
+  @apply py-5;
+}
+.wrapper{
+  @apply flex;
+}
+
+.logo{
+  @apply mr-[60px] ;
+}
+
+.nav{
+  @apply max-w-[420px] w-full;
+}
+
+.list{
+  @apply flex items-center justify-between;
+}
