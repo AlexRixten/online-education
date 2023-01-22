@@ -2,7 +2,7 @@
   @apply py-20;
 }
 .header{
-  @apply flex items-center justify-between;
+  @apply flex items-center justify-between -lg:flex-col -lg:gap-[20px];
 }
 
 .wrapper{

@@ -1,7 +1,43 @@
 .lectureCard {
-  @apply p-[32px] h-[126px] rounded bg-white;
+  @apply p-[32px] min-h-[126px] rounded bg-white;
   &:hover {
-    @apply  scale-105;
+    @apply scale-105;
     box-shadow: 0 80px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 63, 58, 0.1), 0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
   }
+}
+
+.wrapperDuration {
+  @apply flex items-center justify-between gap-10 -lg:flex-col;
+}
+
+.day {
+  @apply font-black text-[40px] text-[#FF3F3A];
+}
+
+.date {
+  @apply flex gap-[20px] max-w-[177px] w-full;
+}
+
+.time {
+  @apply max-w-[177px] w-full;
+}
+
+.month {
+  @apply text-[#1E212C] font-bold text-[20px];
+}
+
+.duration {
+  @apply font-normal text-[16px] text-[#787A80];
+}
+
+.description {
+  @apply max-w-[750px] w-full -lg:text-center;
+}
+
+.title {
+  @apply text-[#1E212C] font-bold text-[20px];
+}
+
+.subtitle {
+  @apply font-normal text-[#787A80] text-[16px];
 }
