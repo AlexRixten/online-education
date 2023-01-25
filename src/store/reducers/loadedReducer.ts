@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-	loaded: false
+	isLoading: false
 };
 
 const loadedSlice = createSlice({
@@ -9,7 +9,7 @@ const loadedSlice = createSlice({
 	initialState,
 	reducers: {
 		loading(state, action) {
-			state.loaded = !action.payload;
+			state.isLoading = !action.payload;
 		},
 	}
 });
