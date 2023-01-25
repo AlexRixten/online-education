@@ -1,13 +1,13 @@
 import styles from "./Courses.module.scss";
-import { Title } from "../Title/Title";
-import { Subtitle } from "../Subtitle/Subtitle";
-import { Button } from "../Button/Button";
+import { Title } from "../../components/Title/Title";
+import { Subtitle } from "../../components/Subtitle/Subtitle";
+import { Button } from "../../components/Button/Button";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import { fetchCourses } from "../../store/reducers/coursesReducer";
 import { coursesSelector } from "../../store/selectors/coursesSelector";
 import { useAppDispatch } from "../../store/hooks";
-import { CourseCard } from "./CourseCard/CourseCard";
+import { CourseCard } from "../../components/CourseCard/CourseCard";
 import { ERoutes } from "../../enums/routes.enum";
 import { loading } from "../../store/reducers/loadedReducer";
 

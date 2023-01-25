@@ -4,10 +4,11 @@ import { useEffect } from "react";
 import { lecturesSelector } from "../../store/selectors/lecturesSelector";
 import { fetchLectures } from "../../store/reducers/lecturesReducer";
 import styles from "./Lectures.module.scss";
-import { Title } from "../Title/Title";
-import { Subtitle } from "../Subtitle/Subtitle";
-import { Button } from "../Button/Button";
-import { LectureCard } from "./LectureCard/LectureCard";
+import { Title } from "../../components/Title/Title";
+import { Subtitle } from "../../components/Subtitle/Subtitle";
+import { Button } from "../../components/Button/Button";
+import { LectureCard } from "../../components/LectureCard/LectureCard";
+import { loading } from "../../store/reducers/loadedReducer";
 
 export const Lectures = () => {
 
@@ -18,9 +19,12 @@ export const Lectures = () => {
 	useEffect(() => {
 		const getLectures = async () => {
 			try {
+				dispatch(loading(true))
 				dispatch(fetchLectures({ limit: 3 }));
 			} catch (error) {
 				console.log(error);
+			}finally {
+				dispatch(loading(false))
 			}
 		};
 		getLectures();
