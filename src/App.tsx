@@ -13,9 +13,12 @@ import { EventPage } from "./pages/Event/EventPage";
 import { PostPage } from "./pages/Post/PostPage";
 import { NotFoundPage } from "./pages/NotFound/NotFoundPage";
 import { MainLayout } from "./layouts/mainLayout/MainLayout";
+import { loadedSelector } from "./store/selectors/loadedSelector";
+import { Spinner } from "./components/Spinner/Spinner";
 
 function App() {
 	const { isAuth } = useSelector(authSelector);
+	const {isLoading} = useSelector(loadedSelector)
 
 	if (isAuth) {
 		return (
@@ -25,6 +28,13 @@ function App() {
 			</Routes>
 		);
 	}
+
+	if(isLoading){
+		return(
+			<Spinner />
+		)
+	}
+
 	return (
 		<MainLayout>
 			<Routes>

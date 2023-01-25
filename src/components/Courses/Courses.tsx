@@ -2,7 +2,6 @@ import styles from "./Courses.module.scss";
 import { Title } from "../Title/Title";
 import { Subtitle } from "../Subtitle/Subtitle";
 import { Button } from "../Button/Button";
-import { Icon } from "../Icon";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import { fetchCourses } from "../../store/reducers/coursesReducer";
@@ -10,6 +9,7 @@ import { coursesSelector } from "../../store/selectors/coursesSelector";
 import { useAppDispatch } from "../../store/hooks";
 import { CourseCard } from "./CourseCard/CourseCard";
 import { ERoutes } from "../../enums/routes.enum";
+import { loading } from "../../store/reducers/loadedReducer";
 
 export const Courses = () => {
 	const dispatch = useAppDispatch()
@@ -19,9 +19,13 @@ export const Courses = () => {
 	useEffect(() => {
 		const getCourses = async () => {
 			try {
+				dispatch(loading(true))
 				dispatch(fetchCourses({limit: 6}));
 			} catch (error) {
 				console.log(error);
+			}
+			finally {
+				dispatch(loading(false))
 			}
 		};
 		getCourses();
