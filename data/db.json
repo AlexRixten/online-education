@@ -73,7 +73,7 @@
     },
     {
       "id": 2,
-      "teacher":{
+      "teacher": {
         "id": 2,
         "name": "Dianne Russell",
         "position": "Founder and CEO",
@@ -144,7 +144,7 @@
     },
     {
       "id": 3,
-      "teacher":{
+      "teacher": {
         "id": 3,
         "name": "Kristin Watson",
         "position": "Marketer, Curator of Marketing Course",
@@ -215,7 +215,7 @@
     },
     {
       "id": 4,
-      "teacher":{
+      "teacher": {
         "id": 4,
         "name": "Marvin McKinney",
         "position": "PM, Curator of Management Course",
@@ -286,7 +286,7 @@
     },
     {
       "id": 5,
-      "teacher":{
+      "teacher": {
         "id": 5,
         "name": "Leslie Alexander Li",
         "position": "Curator of HR & Recruting Course",
@@ -357,7 +357,7 @@
     },
     {
       "id": 6,
-      "teacher":{
+      "teacher": {
         "id": 6,
         "name": "Kathryn Murphy",
         "position": "Analyst and Marketing specialist",
@@ -428,7 +428,7 @@
     },
     {
       "id": 7,
-      "teacher":{
+      "teacher": {
         "id": 7,
         "name": "Brooklyn Simmons",
         "position": "Curator of Development Course",
@@ -514,7 +514,7 @@
     },
     {
       "id": 8,
-      "teacher":{
+      "teacher": {
         "id": 8,
         "name": "Cody Fisher",
         "position": "UX Designer, Curator of Design Course",
@@ -1049,7 +1049,44 @@
       ]
     }
   ],
-  "blogs": [],
+  "blogs": [
+    {
+      "id": 1,
+      "type": "podcast",
+      "nameType": "Podcast",
+      "title": "What is traffic arbitrage and does it really make money?",
+      "description": "Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...",
+      "date": "September 4, 2020",
+      "duration": 36,
+      "linkTitle": "Listen",
+      "tag": "Marketing",
+      "imgUrl": "https://kobedigital.com/wp-content/uploads/2021/12/Depositphotos_236366946_L.jpg"
+    },
+    {
+      "id": 2,
+      "type": "video",
+      "nameType": "Video",
+      "title": "What to do and who to talk to if you want to get feedback on the product",
+      "description": "Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus...",
+      "date": "August 25, 2020",
+      "duration": 45,
+      "linkTitle": "Watch",
+      "tag": "Management",
+      "imgUrl": "https://tel.yorksj.ac.uk/wp-content/uploads/2020/01/50536265_xl.jpg"
+    },
+    {
+      "id": 3,
+      "type": "article",
+      "nameType": "Article",
+      "title": "Should you choose a creative profession if you are attracted to creativity?",
+      "description": "Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...",
+      "date": "August 8, 2020",
+      "duration": "",
+      "linkTitle": "Read",
+      "tag": "Design",
+      "imgUrl": "https://get.wallhere.com/photo/stilllife-money-book-wallet-read-knowledge-lightroom-cedarvalley-cvcc-975740.jpg"
+    }
+  ],
   "lectures": [
     {
       "id": 1,
