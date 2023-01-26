@@ -1,8 +1,8 @@
 export interface IBlogsState {
-	blogs: IBlogs[];
+	blogs: IBlog[];
 }
 
-export interface IBlogs {
+export interface IBlog {
 	id: number;
 	type: string;
 	nameType: string;

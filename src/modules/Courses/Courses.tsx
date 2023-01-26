@@ -14,7 +14,7 @@ import { loading } from "../../store/reducers/loadedReducer";
 export const Courses = () => {
 	const dispatch = useAppDispatch()
 
-	const courses = useSelector(coursesSelector);
+	const { courses } = useSelector(coursesSelector);
 
 	useEffect(() => {
 		const getCourses = async () => {
@@ -44,7 +44,7 @@ export const Courses = () => {
 					</div>
 
 				<div className={styles.wrapper}>
-					{courses?.courses?.map((item) => (
+					{courses.map((item) => (
 						<CourseCard key={item.id} {...item.teacher} />
 					))}
 				</div>

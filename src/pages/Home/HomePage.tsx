@@ -10,11 +10,11 @@ export const HomePage = () => {
 	return (
 		<>
 			<About />
-			<Subscribe/>
 			<Courses />
 			<Benefits />
 			<Lectures />
 			<Blogs />
+			<Subscribe/>
 		</>
 	);
 };

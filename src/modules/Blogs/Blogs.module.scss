@@ -1,0 +1,10 @@
+.courses{
+  @apply py-20;
+}
+.header{
+  @apply flex items-center justify-between -lg:flex-col -lg:gap-[20px];
+}
+
+.wrapper{
+  @apply mt-16 flex gap-2 flex-wrap -lg:flex-col items-center justify-center;
+}
