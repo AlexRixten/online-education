@@ -1,4 +1,4 @@
-import logo from '../../assets/Images/footer/logo.png'
+import logo from "../../assets/Images/footer/logo.png";
 
 import styles from "./Footer.module.scss";
 import { CONTACT_US, COURSES, NAV_LINK, SOCIAL_LINK } from "../../mockData";
@@ -15,13 +15,16 @@ export const Footer = () => {
 
 						<div className={styles.main}>
 							<Link className={styles.logo} to={ERoutes.Home}>< img src={logo} alt="logo" /></Link>
-								<p className={styles.description}>
-									Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant approaches to online learning, internships and employment in the largest companies in the country.
-								</p>
+							<p className={styles.description}>
+								Createx Online School is a leader in online studying.
+								<br></br>
+								We have lots of courses and programs from the main market experts. We provide relevant approaches to
+								online learning, internships and employment in the largest companies in the country.
+							</p>
 							<ul className={styles.socials}>
 								{SOCIAL_LINK.map((item) => (
 									<li key={item.id} className={styles.socialLink}>
-										<a href={item.path} >
+										<a href={item.path}>
 											<Icon size={22} color="#A5A6AB" name={item.title} />
 										</a>
 									</li>
@@ -33,7 +36,7 @@ export const Footer = () => {
 							<li>SITE MAP</li>
 							{NAV_LINK.map((item) => (
 								<li key={item.id} className={styles.socialLink}>
-									<Link to={item.path} >
+									<Link to={item.path}>
 										{item.title}
 									</Link>
 								</li>
@@ -44,7 +47,7 @@ export const Footer = () => {
 							<li>COURSES</li>
 							{COURSES.map((item) => (
 								<li key={item.id} className={styles.socialLink}>
-									<Link to={item.path} >
+									<Link to={item.path}>
 										{item.title}
 									</Link>
 								</li>
@@ -55,7 +58,7 @@ export const Footer = () => {
 							<li>CONTACT US</li>
 							{CONTACT_US.map((item) => (
 								<li key={item.id} className={styles.socialLink}>
-									<a href={item.path} >
+									<a href={item.path}>
 										<Icon size={22} color="#A5A6AB" name={item.title} />
 										{item.title}
 									</a>
@@ -63,17 +66,31 @@ export const Footer = () => {
 							))}
 						</ul>
 
+						<div className="sighUp">
+							<label className="scs">SIGN UP TO OUR NEWSLETTER
+								<input type="text" placeholder="Email address" />
+								<Icon size={18} color="#FFFFFF" name="arrowNext" />
+								<p>
+									*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.
+								</p>
+							</label>
+						</div>
+
 					</div>
 				</div>
 			</div>
 
-				<div className={styles.bottomBar}>
-					<div className="container">
-						<div className={styles.wrapperBottomBar}>
-
-						</div>
+			<div className={styles.bottomBar}>
+				<div className="container">
+					<div className={styles.wrapperBottomBar}>
+						<p>© All rights reserved. Made with
+							<Icon size={18} color="#FF3F3A" name="heart" />
+							by Createx Studio
+						</p>
+					  <button>GO TO TOP</button>
 					</div>
 				</div>
+			</div>
 		</footer>
 	);
 };
