@@ -1,0 +1,34 @@
+.footer{
+  @apply bg-[#1E212C] text-[#9D9EA3];
+  a:hover{
+    @apply text-white;
+    svg{
+      @apply fill-white;
+    }
+  }
+  ul{
+    li{
+      @apply text-white;
+    }
+    .socialLink{
+      @apply font-normal text-[16px] text-[#9D9EA3];
+    }
+  }
+}
+.topBar{
+  @apply py-20;
+}
+.bottomBar{
+  @apply w-full bg-[#292C37] py-5;
+}
+//.header{
+//  @apply flex items-center justify-between -lg:flex-col -lg:gap-[20px];
+//}
+
+.wrapper{
+  @apply grid grid-cols-[280px_80px_110px_160px_280px] justify-between;
+}
+
+.socials{
+  @apply flex items-center justify-between;
+}
