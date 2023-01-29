@@ -1,3 +1,13 @@
-.badge{
-  @apply bg-white rounded p-8;
+.badge {
+  @apply bg-white rounded-[4px] p-1 flex items-center gap-1;
+}
+
+.absolute {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.static {
+  position: static;
 }
