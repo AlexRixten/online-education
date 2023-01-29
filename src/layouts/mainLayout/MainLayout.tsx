@@ -12,10 +12,12 @@ export const MainLayout = ({ children }: IProps) => {
 		// <div className={styles.appContainer}>
 		// 	<main>{children}</main>
 		// </div>
-		<>
+		<div className={styles.layout}>
+		  <div className={styles.content}>
 			<Header />
 			{children}
+		  </div>
 			<Footer />
-		</>
+		</div>
 	);
 };

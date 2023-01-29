@@ -1,5 +1,6 @@
 .footer{
   @apply bg-[#1E212C] text-[#9D9EA3];
+  flex: 0 0 auto;
   a:hover{
     @apply text-white;
     svg{

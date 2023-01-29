@@ -1,3 +1,11 @@
 .appContainer{
   @apply max-w-7xl my-0 mx-auto px-4;
 }
+
+.layout{
+  @apply flex flex-col h-[100vh];
+}
+
+.content{
+  flex: 1 0 auto;
+}
