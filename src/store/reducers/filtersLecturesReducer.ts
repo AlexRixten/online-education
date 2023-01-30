@@ -13,7 +13,7 @@ const filtersLecturesSlice = createSlice({
   initialState,
   reducers: {
 	setFilter(state, action) {
-
+      console.log(action.payload)
 	}
   }
 });
