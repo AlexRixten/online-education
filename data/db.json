@@ -1093,77 +1093,88 @@
       "date": "05.08.2022",
       "gap": "11:00 - 14:00",
       "title": "Formation of the organizational structure of the company in the face of uncertainty.",
-      "lesson": "Online master-class"
+      "lesson": "Online master-class",
+      "category": [1,2]
     },
     {
       "id": 2,
       "date": "24.07.2022",
       "gap": "11:00 - 12:30",
       "title": "Building a customer service department. Best Practices.",
-      "lesson": "Online lecture"
+      "lesson": "Online lecture",
+      "category": [1,3]
     },
     {
       "id": 3,
       "date": "16.07.2022",
       "gap": "10:00 - 13:00",
       "title": "How to apply methods of speculative design in practice. World building prototyping.",
-      "lesson": "Online workshop"
+      "lesson": "Online workshop",
+      "category": [1,4]
     },
     {
       "id": 4,
       "date": "05.08.2022",
       "gap": "11:00 - 14:00",
       "title": "Formation of the organizational structure of the company in the face of uncertainty.",
-      "lesson": "Online master-class"
+      "lesson": "Online master-class",
+      "category": [1,2]
     },
     {
       "id": 5,
       "date": "24.07.2022",
       "gap": "11:00 - 12:30",
       "title": "Building a customer service department. Best Practices.",
-      "lesson": "Online lecture"
+      "lesson": "Online lecture",
+      "category": [1,3]
     },
     {
       "id": 6,
       "date": "16.07.2022",
       "gap": "10:00 - 13:00",
       "title": "How to apply methods of speculative design in practice. World building prototyping.",
-      "lesson": "Online workshop"
+      "lesson": "Online workshop",
+      "category": [1,4]
     },
     {
       "id": 7,
       "date": "16.07.2022",
       "gap": "10:00 - 13:00",
       "title": "How to apply methods of speculative design in practice. World building prototyping.",
-      "lesson": "Online workshop"
+      "lesson": "Online workshop",
+      "category": [1,4]
     },
     {
       "id": 8,
       "date": "16.07.2022",
       "gap": "10:00 - 13:00",
       "title": "How to apply methods of speculative design in practice. World building prototyping.",
-      "lesson": "Online workshop"
+      "lesson": "Online workshop",
+      "category": [1,4]
     },
     {
       "id": 9,
       "date": "16.07.2022",
       "gap": "10:00 - 13:00",
       "title": "How to apply methods of speculative design in practice. World building prototyping.",
-      "lesson": "Online workshop"
+      "lesson": "Online workshop",
+      "category": [1,4]
     },
     {
       "id": 10,
       "date": "16.07.2022",
       "gap": "10:00 - 13:00",
       "title": "How to apply methods of speculative design in practice. World building prototyping.",
-      "lesson": "Online workshop"
+      "lesson": "Online workshop",
+      "category": [1,4]
     },
     {
       "id": 11,
       "date": "16.07.2022",
       "gap": "10:00 - 13:00",
       "title": "How to apply methods of speculative design in practice. World building prototyping.",
-      "lesson": "Online workshop"
+      "lesson": "Online workshop",
+      "category": [1,4]
     }
   ]
 }

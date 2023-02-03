@@ -1,3 +1,4 @@
+import React, { ChangeEvent } from "react";
 import styles from "./EventsPage.module.scss";
 import { Title } from "../../components/Title/Title";
 import { Subtitle } from "../../components/Subtitle/Subtitle";
@@ -15,6 +16,7 @@ export const EventsPage = () => {
   const dispatch = useAppDispatch();
 
   const { lectures } = useSelector(lecturesSelector);
+
 
   useEffect(() => {
 	const getLectures = async () => {
@@ -37,10 +39,11 @@ export const EventsPage = () => {
 		<div className={styles.filters}>
 		  <label htmlFor="category">
 			Event category
-			<select name="category" id="category">
-			  <option value="1">Online master-class</option>
-			  <option value="2">Online lecture</option>
-			  <option value="3">Online workshop</option>
+			<select name="category" id="category" onChange={() => {}}>
+			  <option value="1">All Theme</option>
+			  <option value="2">Online master-class</option>
+			  <option value="3">Online lecture</option>
+			  <option value="4">Online workshop</option>
 			</select>
 		  </label>
 		  <label htmlFor="sort">
