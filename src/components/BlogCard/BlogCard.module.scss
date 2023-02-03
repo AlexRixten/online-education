@@ -10,7 +10,7 @@
   @apply w-[1px] h-[12px] bg-[#787A80] mx-3;
 }
 .meta{
-  @apply flex items-center justify-start w-full mt-4;
+  @apply flex items-center justify-start w-full mt-4 flex-wrap;
 }
 .date{
   @apply flex items-center gap-[9px];
