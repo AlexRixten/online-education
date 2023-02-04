@@ -11,6 +11,7 @@ import { lecturesSelector } from "../../store/selectors/lecturesSelector";
 import { fetchLectures, setFilters } from "../../store/reducers/lecturesReducer";
 import { LectureCard } from "../../components/LectureCard/LectureCard";
 import { Icon } from "../../components/Icon";
+import { Subscribe } from "../../components/Subscribe/Subscribe";
 
 export const EventsPage = () => {
   const dispatch = useAppDispatch();
@@ -52,7 +53,9 @@ export const EventsPage = () => {
 	dispatch(setFilters({ sort: e.target.value }));
   };
   return (
-	<section className={styles.blogPage}>
+	<>
+
+	<section className={styles.eventPage}>
 	  <div className="container">
 		<Title text="Our events" center={true} />
 		<Subtitle text="Lectures, workshops & master-classes" center={true} />
@@ -95,5 +98,7 @@ export const EventsPage = () => {
 		</div>
 	  </div>
 	</section>
+	  <Subscribe />
+	</>
   );
 };
