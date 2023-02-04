@@ -1,4 +1,4 @@
-import React, { ChangeEvent } from "react";
+import React from "react";
 import styles from "./EventsPage.module.scss";
 import { Title } from "../../components/Title/Title";
 import { Subtitle } from "../../components/Subtitle/Subtitle";
@@ -17,7 +17,6 @@ export const EventsPage = () => {
 
   const { lectures } = useSelector(lecturesSelector);
 
-
   useEffect(() => {
 	const getLectures = async () => {
 	  try {
@@ -25,7 +24,9 @@ export const EventsPage = () => {
 		dispatch(fetchLectures({ limit: 3 }));
 	  } catch (error) {
 		console.log(error);
-	  } finally {
+		dispatch(loading(false));
+	  }
+	  finally {
 		dispatch(loading(false));
 	  }
 	};
