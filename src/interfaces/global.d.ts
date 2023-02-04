@@ -1,4 +1,6 @@
 export interface IParameters {
-	page?: number;
-	limit?: number;
+  page?: number;
+  limit?: number;
+  category?: number;
+  sort?: string;
 }

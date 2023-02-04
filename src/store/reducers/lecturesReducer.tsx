@@ -10,21 +10,29 @@ const initialState: ILecturesState = {
 	page: 1,
 	limit: 3,
 	category: 1,
-	sort: 1,
+	sort: 'asc',
 	search: ""
   },
   status: EStatusLoading.PENDING
 };
 
 export const fetchLectures = createAsyncThunk("lectures/fetchLectures", async (parameters: IParameters) => {
-  const { page, limit } = parameters;
+  const { page, limit, category, sort } = parameters;
   let queryParameters: string = "";
+
   if (page) {
 	queryParameters += `_page=${page}`;
   }
   if (limit) {
-	queryParameters += `_limit=${limit}`;
+	queryParameters += `&_limit=${limit}`;
   }
+  if (category) {
+	queryParameters += `&category_like=${category}`;
+  }
+  if (sort) {
+	queryParameters += `&_sort=date&_order=${sort}`;
+  }
+
   const response = await axios.get(`http://localhost:3001/lectures${queryParameters ? `/?${queryParameters}` : ""}`);
   return response.data;
 });
@@ -32,7 +40,23 @@ export const fetchLectures = createAsyncThunk("lectures/fetchLectures", async (p
 const lecturesSlice = createSlice({
   name: "lectures",
   initialState,
-  reducers: {},
+  reducers: {
+	setFilters(state, action) {
+	  const { page, limit, category, sort } = action.payload;
+	  if (page) {
+		state.filters.page = page;
+	  }
+	  if (limit) {
+		state.filters.limit = limit;
+	  }
+	  if (category) {
+		state.filters.category = category;
+	  }
+	  if(sort){
+		state.filters.sort = sort;
+	  }
+	}
+  },
   extraReducers: (builder) => {
 	builder.addCase(fetchLectures.pending, (state, action) => {
 	  state.status = EStatusLoading.PENDING;
@@ -51,6 +75,6 @@ const lecturesSlice = createSlice({
   }
 });
 
-// export const { } = lecturesSlice.actions;
+export const { setFilters } = lecturesSlice.actions;
 
 export default lecturesSlice.reducer;

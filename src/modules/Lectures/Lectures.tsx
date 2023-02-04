@@ -40,7 +40,7 @@ export const Lectures = () => {
 
 				<div className={styles.wrapper}>
 					{lectures?.lectures?.map((item) => (
-						<LectureCard key={item.id} {...item} />
+						<LectureCard key={item.id} item={item} />
 					))}
 				</div>
 

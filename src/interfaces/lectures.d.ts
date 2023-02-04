@@ -10,7 +10,7 @@ export interface IFilters {
   page: number;
   limit: number;
   category: number;
-  sort: number;
+  sort: string;
   search: string;
 }
 
