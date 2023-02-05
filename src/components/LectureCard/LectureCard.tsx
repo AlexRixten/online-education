@@ -14,7 +14,7 @@ interface IProps {
 export const LectureCard = (props: IProps) => {
   const { id, date, gap, title, lesson } = props.item;
 
-  const classNameForView = props.view === "lines" ? styles.lines : styles.tiles;
+  const classNameForView = props.view === "tiles" ? styles.tiles : styles.lines;
 
   return (
 	<div className={`${styles.lectureCard} ${classNameForView}`}>
