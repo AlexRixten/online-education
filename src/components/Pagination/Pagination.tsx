@@ -4,7 +4,7 @@ import { usePagination, DOTS } from "../../hooks/usePagination";
 import "./Pagination.scss";
 
 interface IProps {
-  onPageChange: (page: number | string) => void,
+  onPageChange: (page:number) => void,
   totalCount: number;
   siblingCount: number;
   currentPage: number;
@@ -61,9 +61,9 @@ function Pagination(props: IProps) {
 	  {paginationRange.map(pageNumber => {
 
 		// If the pageItem is a DOT, render the DOTS unicode character
-		if (pageNumber === DOTS) {
-		  return <li className="pagination-item dots">&#8230;</li>;
-		}
+		// if (pageNumber === DOTS) {
+		//   return <li className="pagination-item dots">&#8230;</li>;
+		// }
 
 		// Render our Page Pills
 		return (

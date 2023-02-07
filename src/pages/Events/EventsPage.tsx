@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, useMemo, useState } from "react";
 import styles from "./EventsPage.module.scss";
 import { Title } from "../../components/Title/Title";
 import { Subtitle } from "../../components/Subtitle/Subtitle";
@@ -12,12 +12,16 @@ import { fetchLectures, setFilters } from "../../store/reducers/lecturesReducer"
 import { LectureCard } from "../../components/LectureCard/LectureCard";
 import { Icon } from "../../components/Icon";
 import { Subscribe } from "../../components/Subscribe/Subscribe";
+import Pagination from "../../components/Pagination/Pagination";
+
+let PageSize = 10;
 
 export const EventsPage = () => {
   const dispatch = useAppDispatch();
 
   const { lectures, filters } = useSelector(lecturesSelector);
   const [view, setView] = useState<string>('lines');
+  const [currentPage, setCurrentPage] = useState<number>(1);
 
 
   const changeViewLines = () => {
@@ -52,6 +56,13 @@ export const EventsPage = () => {
   const onChangeSort = (e: ChangeEvent<HTMLSelectElement>) => {
 	dispatch(setFilters({ sort: e.target.value }));
   };
+
+  const currentTableData = useMemo(() => {
+	const firstPageIndex = (currentPage - 1) * PageSize;
+	const lastPageIndex = firstPageIndex + PageSize;
+	return lectures.slice(firstPageIndex, lastPageIndex);
+  }, [currentPage]);
+
   return (
 	<>
 
@@ -92,11 +103,19 @@ export const EventsPage = () => {
 		  </div>
 		</div>
 		<div className={styles.wrapper}>
-		  {lectures?.map((item) => (
+		  {currentTableData?.map((item) => (
 			<LectureCard key={item.id} item={item} view={view} />
 		  ))}
 		</div>
 	  </div>
+
+	  <Pagination
+		currentPage={currentPage}
+		className="pagination-bar"
+		totalCount={lectures.length}
+		pageSize={PageSize}
+		onPageChange={page => setCurrentPage(page)}
+	  />
 	</section>
 	  <Subscribe />
 	</>
