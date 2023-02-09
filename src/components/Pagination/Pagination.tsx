@@ -1,12 +1,12 @@
 import React from "react";
 import classnames from "classnames";
-import { usePagination, DOTS } from "../../hooks/usePagination";
+import { usePagination} from "../../hooks/usePagination";
 import "./Pagination.scss";
 
 interface IProps {
-  onPageChange: (page:number) => void,
+  onPageChange: (page: number) => void,
   totalCount: number;
-  siblingCount: number;
+  siblingCount?: number;
   currentPage: number;
   pageSize: number;
   className: string;
@@ -58,7 +58,7 @@ function Pagination(props: IProps) {
 		<div className="arrow left" />
 	  </li>
 	  {/*@ts-ignore*/}
-	  {paginationRange.map(pageNumber => {
+	  {paginationRange.map((pageNumber: number) => {
 
 		// If the pageItem is a DOT, render the DOTS unicode character
 		// if (pageNumber === DOTS) {
