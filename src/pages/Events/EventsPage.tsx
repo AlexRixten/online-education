@@ -47,7 +47,6 @@ export const EventsPage = () => {
   }, [filters]);
 
   const onChangeCategory = (e: ChangeEvent<HTMLSelectElement>) => {
-	console.log("filter");
 	dispatch(setFilters({ category: e.target.value }));
   };
   const onChangeShow = (e: ChangeEvent<HTMLInputElement>) => {
@@ -103,7 +102,7 @@ export const EventsPage = () => {
 		  </div>
 		</div>
 		<div className={styles.wrapper}>
-		  {currentTableData?.map((item) => (
+		  {lectures?.map((item) => (
 			<LectureCard key={item.id} item={item} view={view} />
 		  ))}
 		</div>
