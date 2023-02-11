@@ -101,3 +101,14 @@ export const CONTACT_US = [
 	path: "mailto:hello@createx.com"
   }
 ];
+
+export const CATEGORY_EVENTS = [
+  { value: '1', label: 'All Theme' },
+  { value: '2', label: 'Online master-class' },
+  { value: '3', label: 'Online lecture' },
+  { value: '4', label: 'Online workshop' }
+]
+export const SORT_EVENTS = [
+  { value: 'asc', label: 'newest' },
+  { value: 'desc', label: 'oldest' },
+]
