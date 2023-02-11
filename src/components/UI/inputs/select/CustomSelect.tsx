@@ -2,22 +2,24 @@ import React, { ChangeEvent } from "react";
 import Select from "react-select";
 import { ICustomSelect } from "../../../../interfaces/customsUI";
 
+import styles from './CustomSelect.module.scss'
+
 interface IProps {
   selectList: ICustomSelect[];
   title: string;
-  onChange?: (value: ChangeEvent<HTMLSelectElement>) => void;
+  onChange?: (value: string) => void;
 }
 
 export const CustomSelect = (props: IProps) => {
   return (
-	<label>
+	<label className={styles.label}>
 	  {props.title}
 	  <Select
-		className="test"
-		name="color"
+		className={styles.select}
+		defaultValue={props.selectList[0]}
 		options={props.selectList}
-		styles={{ menu: (base) => ({ ...base, position: 'relative' })}}
 		isClearable
+		onChange={(value) => props.onChange(value)}
 	  />
 	</label>
   );

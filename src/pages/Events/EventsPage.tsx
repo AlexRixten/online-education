@@ -14,7 +14,7 @@ import { Icon } from "../../components/Icon";
 import { Subscribe } from "../../components/Subscribe/Subscribe";
 import Pagination from "../../components/Pagination/Pagination";
 import { CustomSelect } from "../../components/UI/inputs/select/CustomSelect";
-import { CATEGORY_EVENTS } from "../../mockData";
+import { CATEGORY_EVENTS, SORT_EVENTS } from "../../mockData";
 
 let PageSize = 10;
 
@@ -48,8 +48,8 @@ export const EventsPage = () => {
 	getLectures();
   }, [filters]);
 
-  const onChangeCategory = (e: ChangeEvent<HTMLSelectElement>) => {
-	dispatch(setFilters({ category: e.target.value }));
+  const onChangeCategory = (value: string) => {
+	dispatch(setFilters({ category: value}));
   };
   const onChangeShow = (e: ChangeEvent<HTMLInputElement>) => {
 	dispatch(setFilters({ limit: e.target.value }));
@@ -71,25 +71,8 @@ export const EventsPage = () => {
 		<Title text="Our events" center={true} />
 		<Subtitle text="Lectures, workshops & master-classes" center={true} />
 		<div className={styles.filters}>
-		  <CustomSelect title="Event category" selectList={CATEGORY_EVENTS} />
-		  {/*<label htmlFor="category">*/}
-			{/*Event category*/}
-			{/*<select name="category" id="category" onChange={(e) => {*/}
-			{/*  onChangeCategory(e);*/}
-			{/*}}>*/}
-			{/*  <option value="1">All Theme</option>*/}
-			{/*  <option value="2">Online master-class</option>*/}
-			{/*  <option value="3">Online lecture</option>*/}
-			{/*  <option value="4">Online workshop</option>*/}
-			{/*</select>*/}
-		  {/*</label>*/}
-		  <label htmlFor="sort">
-			Sort by
-			<select name="sort" id="sort" onChange={(e) => onChangeSort(e)}>
-			  <option value="asc">newest</option>
-			  <option value="desc">oldest</option>
-			</select>
-		  </label>
+		  <CustomSelect title="Event category" selectList={CATEGORY_EVENTS} onChange={(value) => onChangeShow(value)}/>
+		  <CustomSelect title="Sort" selectList={SORT_EVENTS} />
 		  <label htmlFor="show">
 			Show
 			<input type="number" defaultValue={filters.limit} onChange={(e) => onChangeShow(e)} />
