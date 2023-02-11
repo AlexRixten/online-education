@@ -7,7 +7,7 @@ import { blogsSelector } from "../../store/selectors/blogsSelector";
 import { BlogCard } from "../../components/BlogCard/BlogCard";
 import { Title } from "../../components/Title/Title";
 import { Subtitle } from "../../components/Subtitle/Subtitle";
-import { Button } from "../../components/Button/Button";
+import { Button } from "../../components/UI/buttons/Button/Button";
 import { ERoutes } from "../../enums/routes.enum";
 import styles from "./Blogs.module.scss";
 

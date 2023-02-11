@@ -1,7 +1,7 @@
 import { ILecture } from "../../interfaces/lectures";
 
 import styles from "./LectureCard.module.scss";
-import { Button } from "../Button/Button";
+import { Button } from "../UI/buttons/Button/Button";
 import { ERoutes } from "../../enums/routes.enum";
 
 const monthArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];

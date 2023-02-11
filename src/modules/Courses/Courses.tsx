@@ -1,7 +1,7 @@
 import styles from "./Courses.module.scss";
 import { Title } from "../../components/Title/Title";
 import { Subtitle } from "../../components/Subtitle/Subtitle";
-import { Button } from "../../components/Button/Button";
+import { Button } from "../../components/UI/buttons/Button/Button";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import { fetchCourses } from "../../store/reducers/coursesReducer";

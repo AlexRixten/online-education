@@ -6,7 +6,7 @@ import { fetchLectures } from "../../store/reducers/lecturesReducer";
 import styles from "./Lectures.module.scss";
 import { Title } from "../../components/Title/Title";
 import { Subtitle } from "../../components/Subtitle/Subtitle";
-import { Button } from "../../components/Button/Button";
+import { Button } from "../../components/UI/buttons/Button/Button";
 import { LectureCard } from "../../components/LectureCard/LectureCard";
 import { loading } from "../../store/reducers/loadedReducer";
 

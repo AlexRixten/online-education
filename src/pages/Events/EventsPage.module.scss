@@ -1,21 +1,21 @@
 .eventPage {
   @apply pt-20 pb-48;
-  label {
-    @apply text-[#424551] text-[16px] font-bold leading-[150%];
-    position: relative;
-
-    select, input {
-      @apply bg-white border-2 border-solid border-[#D7DADD] px-4 py-3 font-normal rounded ml-4 w-[160px];
-      position: relative;
-    }
-
-    svg {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 15px;
-    }
-  }
+  //label {
+  //  @apply text-[#424551] text-[16px] font-bold leading-[150%];
+  //  position: relative;
+  //
+  //  select, input {
+  //    @apply bg-white border-2 border-solid border-[#D7DADD] px-4 py-3 font-normal rounded ml-4 w-[160px];
+  //    position: relative;
+  //  }
+  //
+  //  svg {
+  //    position: absolute;
+  //    top: 50%;
+  //    transform: translateY(-50%);
+  //    right: 15px;
+  //  }
+  //}
 
   .filters {
     @apply flex items-center justify-between flex-wrap mt-12;

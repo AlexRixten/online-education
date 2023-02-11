@@ -4,7 +4,7 @@ import img from "../../assets/Images/about/image.jpg";
 
 import styles from "./About.module.scss";
 import { Icon } from "../Icon";
-import { Button } from "../Button/Button";
+import { Button } from "../UI/buttons/Button/Button";
 import { ERoutes } from "../../enums/routes.enum";
 
 export const About = () => {
