@@ -19,7 +19,8 @@ export const CustomSelect = (props: IProps) => {
 		defaultValue={props.selectList[0]}
 		options={props.selectList}
 		isClearable
-		onChange={(value) => props.onChange(value)}
+		// @ts-ignore
+		onChange={( option) => props.onChange( option.value )}
 	  />
 	</label>
   );

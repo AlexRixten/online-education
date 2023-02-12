@@ -51,11 +51,11 @@ export const EventsPage = () => {
   const onChangeCategory = (value: string) => {
 	dispatch(setFilters({ category: value}));
   };
+  const onChangeSort = (value: string) => {
+	dispatch(setFilters({ sort: value }));
+  };
   const onChangeShow = (e: ChangeEvent<HTMLInputElement>) => {
 	dispatch(setFilters({ limit: e.target.value }));
-  };
-  const onChangeSort = (e: ChangeEvent<HTMLSelectElement>) => {
-	dispatch(setFilters({ sort: e.target.value }));
   };
 
   const currentTableData = useMemo(() => {
@@ -71,8 +71,8 @@ export const EventsPage = () => {
 		<Title text="Our events" center={true} />
 		<Subtitle text="Lectures, workshops & master-classes" center={true} />
 		<div className={styles.filters}>
-		  <CustomSelect title="Event category" selectList={CATEGORY_EVENTS} onChange={(value) => onChangeShow(value)}/>
-		  <CustomSelect title="Sort" selectList={SORT_EVENTS} />
+		  <CustomSelect title="Event category" selectList={CATEGORY_EVENTS} onChange={(value) => onChangeCategory(value)}/>
+		  <CustomSelect title="Sort" selectList={SORT_EVENTS} onChange={(value) => onChangeSort(value)} />
 		  <label htmlFor="show">
 			Show
 			<input type="number" defaultValue={filters.limit} onChange={(e) => onChangeShow(e)} />
