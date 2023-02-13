@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
-import styles from "./MainLayout.module.scss";
 import { Header } from "../../modules/Header/Header";
 import { Footer } from "../../modules/Footer/Footer";
+import styles from "./MainLayout.module.scss";
 
 interface IProps {
 	children: ReactNode;

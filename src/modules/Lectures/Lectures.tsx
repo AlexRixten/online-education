@@ -1,14 +1,13 @@
-import { useAppDispatch } from "../../store/hooks";
-import { useSelector } from "react-redux";
 import { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { useAppDispatch } from "../../store/hooks";
 import { lecturesSelector } from "../../store/selectors/lecturesSelector";
 import { fetchLectures } from "../../store/reducers/lecturesReducer";
-import styles from "./Lectures.module.scss";
+import { loading } from "../../store/reducers/loadedReducer";
 import { Title } from "../../components/Title/Title";
 import { Subtitle } from "../../components/Subtitle/Subtitle";
-import { Button } from "../../components/UI/buttons/Button/Button";
 import { LectureCard } from "../../components/LectureCard/LectureCard";
-import { loading } from "../../store/reducers/loadedReducer";
+import styles from "./Lectures.module.scss";
 
 export const Lectures = () => {
 

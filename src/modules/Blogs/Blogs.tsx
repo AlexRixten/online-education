@@ -1,8 +1,8 @@
 import { useEffect } from "react";
+import { useSelector } from "react-redux";
 import { loading } from "../../store/reducers/loadedReducer";
 import { fetchBlogs } from "../../store/reducers/blogsReducer";
 import { useAppDispatch } from "../../store/hooks";
-import { useSelector } from "react-redux";
 import { blogsSelector } from "../../store/selectors/blogsSelector";
 import { BlogCard } from "../../components/BlogCard/BlogCard";
 import { Title } from "../../components/Title/Title";

@@ -1,10 +1,9 @@
-import logo from "../../assets/Images/footer/logo.png";
-
-import styles from "./Footer.module.scss";
-import { CONTACT_US, COURSES, NAV_LINK, SOCIAL_LINK } from "../../mockData";
+import { Link } from "react-router-dom";
 import { Icon } from "../../components/Icon";
 import { ERoutes } from "../../enums/routes.enum";
-import { Link } from "react-router-dom";
+import { CONTACT_US, COURSES, NAV_LINK, SOCIAL_LINK } from "../../mockData";
+import logo from "../../assets/Images/footer/logo.png";
+import styles from "./Footer.module.scss";
 
 export const Footer = () => {
 	return (

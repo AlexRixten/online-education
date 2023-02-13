@@ -1,8 +1,8 @@
+import { Link, NavLink } from "react-router-dom";
+import { ERoutes } from "../../enums/routes.enum";
+import { NAV_LINK } from "../../mockData";
 import logo from "../../assets/Images/logo/logo.png";
 import styles from "./Header.module.scss";
-import { Link, NavLink } from "react-router-dom";
-import { NAV_LINK } from "../../mockData";
-import { ERoutes } from "../../enums/routes.enum";
 
 export const Header = () => {
 	return (
