@@ -1,11 +1,10 @@
 import { Title } from "../Title/Title";
 import { Subtitle } from "../Subtitle/Subtitle";
-import img from "../../assets/Images/about/image.jpg";
-
-import styles from "./About.module.scss";
-import { Icon } from "../Icon";
 import { Button } from "../UI/buttons/Button/Button";
 import { ERoutes } from "../../enums/routes.enum";
+import { Icon } from "../Icon";
+import img from "../../assets/Images/about/image.jpg";
+import styles from "./About.module.scss";
 
 export const About = () => {
 	return (

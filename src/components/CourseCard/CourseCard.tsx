@@ -1,8 +1,8 @@
-import styles from "./CourseCard.module.scss";
-import { ITeacher } from "../../interfaces/courses";
-import { Tags } from "../Tags/Tags";
 import { Link } from "react-router-dom";
+import { Tags } from "../Tags/Tags";
 import { ERoutes } from "../../enums/routes.enum";
+import { ITeacher } from "../../interfaces/courses";
+import styles from "./CourseCard.module.scss";
 
 export const CourseCard = (props: ITeacher) => {
 	return (

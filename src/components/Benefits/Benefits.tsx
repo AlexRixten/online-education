@@ -1,8 +1,8 @@
-import styles from "./Benefits.module.scss";
-import img from "../../assets/Images/benefits/illustration.png";
 import { Title } from "../Title/Title";
 import { Subtitle } from "../Subtitle/Subtitle";
 import { Icon } from "../Icon";
+import img from "../../assets/Images/benefits/illustration.png";
+import styles from "./Benefits.module.scss";
 
 export const Benefits = () => {
 	return (

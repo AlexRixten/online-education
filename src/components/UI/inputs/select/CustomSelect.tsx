@@ -1,7 +1,6 @@
-import React, { ChangeEvent } from "react";
+import React from "react";
 import Select from "react-select";
 import { ICustomSelect } from "../../../../interfaces/customsUI";
-
 import styles from './CustomSelect.module.scss'
 
 interface IProps {

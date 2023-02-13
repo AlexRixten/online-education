@@ -1,9 +1,8 @@
-import { IBlog } from "../../interfaces/blogs";
-import { Badge } from "../Badge/Badge";
-
-import styles from "./BlogCard.module.scss";
-import { Icon } from "../Icon";
 import { Link } from "react-router-dom";
+import { Badge } from "../Badge/Badge";
+import { IBlog } from "../../interfaces/blogs";
+import { Icon } from "../Icon";
+import styles from "./BlogCard.module.scss";
 
 export const BlogCard = (props: IBlog) => {
 	const { id, type, nameType, title, description, date, duration, linkTitle, tag, imgUrl } = props;

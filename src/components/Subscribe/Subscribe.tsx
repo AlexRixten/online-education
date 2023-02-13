@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-
 import { Title } from "../Title/Title";
 import { Subtitle } from "../Subtitle/Subtitle";
-
 import styles from "./Subscribe.module.scss";
 
 export const Subscribe = () => {

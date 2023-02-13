@@ -1,5 +1,5 @@
-import styles from './Badge.module.scss'
 import { Icon } from "../Icon";
+import styles from './Badge.module.scss'
 
 interface IProps{
 	name: string;
