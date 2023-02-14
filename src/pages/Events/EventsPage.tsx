@@ -1,20 +1,18 @@
-import React, { ChangeEvent, useMemo, useState } from "react";
-import styles from "./EventsPage.module.scss";
-import { Title } from "../../components/Title/Title";
-import { Subtitle } from "../../components/Subtitle/Subtitle";
+import React, { ChangeEvent, useMemo, useState, useEffect } from "react";
 import { useSelector } from "react-redux";
-
 import { useAppDispatch } from "../../store/hooks";
-import { useEffect } from "react";
 import { loading } from "../../store/reducers/loadedReducer";
 import { lecturesSelector } from "../../store/selectors/lecturesSelector";
 import { fetchLectures, setFilters } from "../../store/reducers/lecturesReducer";
 import { LectureCard } from "../../components/LectureCard/LectureCard";
+import { Title } from "../../components/Title/Title";
+import { Subtitle } from "../../components/Subtitle/Subtitle";
 import { Icon } from "../../components/Icon";
 import { Subscribe } from "../../components/Subscribe/Subscribe";
 import Pagination from "../../components/Pagination/Pagination";
 import { CustomSelect } from "../../components/UI/inputs/select/CustomSelect";
 import { CATEGORY_EVENTS, SORT_EVENTS } from "../../mockData";
+import styles from "./EventsPage.module.scss";
 
 let PageSize = 10;
 
