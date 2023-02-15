@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { authSelector } from "./store/selectors/authSelector";
 import { Navigate, Route, Routes } from "react-router-dom";
-import { ERoutes } from "./enums/routes.enum";
+import { loadedSelector } from "./store/selectors/loadedSelector";
 import { HomePage } from "./pages/Home/HomePage";
 import { AboutUsPage } from "./pages/AboutUs/AboutUsPage";
 import { EventsPage } from "./pages/Events/EventsPage";
@@ -13,8 +13,8 @@ import { EventPage } from "./pages/Event/EventPage";
 import { PostPage } from "./pages/Post/PostPage";
 import { NotFoundPage } from "./pages/NotFound/NotFoundPage";
 import { MainLayout } from "./layouts/mainLayout/MainLayout";
-import { loadedSelector } from "./store/selectors/loadedSelector";
 import { Spinner } from "./components/Spinner/Spinner";
+import { ERoutes } from "./enums/routes.enum";
 
 function App() {
 	const { isAuth } = useSelector(authSelector);
