@@ -23,7 +23,6 @@ function App() {
 	if (isAuth) {
 		return (
 			<Routes>
-				{/*<Route path={ERoutes.SignIn} element={<SignInPage />} />*/}
 				<Route path="*" element={<Navigate replace to={ERoutes.SignIn} />} />
 			</Routes>
 		);
