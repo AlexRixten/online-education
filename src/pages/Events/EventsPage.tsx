@@ -11,7 +11,9 @@ import { Icon } from "../../components/Icon";
 import { Subscribe } from "../../components/Subscribe/Subscribe";
 import Pagination from "../../components/Pagination/Pagination";
 import { CustomSelect } from "../../components/UI/inputs/select/CustomSelect";
+import { CustomInputShow } from "../../components/UI/inputs/showInput/CustomInputShow";
 import { CATEGORY_EVENTS, SORT_EVENTS } from "../../mockData";
+import { CustomInputSearch } from "../../components/UI/inputs/searchInput/CustomInputSearch";
 import styles from "./EventsPage.module.scss";
 
 let PageSize = 10;
@@ -56,6 +58,10 @@ export const EventsPage = () => {
 	dispatch(setFilters({ limit: e.target.value }));
   };
 
+  const searchHandler = (e: ChangeEvent<HTMLInputElement>) => {
+	dispatch(setFilters({ search: e.target.value }));
+  };
+
   const currentTableData = useMemo(() => {
 	const firstPageIndex = (currentPage - 1) * PageSize;
 	const lastPageIndex = firstPageIndex + PageSize;
@@ -71,15 +77,9 @@ export const EventsPage = () => {
 		<div className={styles.filters}>
 		  <CustomSelect title="Event category" selectList={CATEGORY_EVENTS} onChange={(value) => onChangeCategory(value)}/>
 		  <CustomSelect title="Sort" selectList={SORT_EVENTS} onChange={(value) => onChangeSort(value)} />
-		  <label htmlFor="show">
-			Show
-			<input type="number" defaultValue={filters.limit} onChange={(e) => onChangeShow(e)} />
-		  </label>
-		  <label htmlFor="search">
-			<input type="text" placeholder="Search event..." />
-			<Icon size={16} color="#9A9CA5" name="search" />
-		  </label>
-		  <div className="buttons">
+		  <CustomInputShow title="Show" limit={filters.limit} onChange={onChangeShow} />
+		  <CustomInputSearch value={filters.search} onChange={(e) => searchHandler(e)} />
+		  <div className="buttonsViews">
 			<button onClick={changeViewLines}><Icon size={16} color="#424551" name="lines" /></button>
 			<button onClick={changeViewTiles}><Icon size={16} color="#424551" name="tiles" /></button>
 		  </div>
