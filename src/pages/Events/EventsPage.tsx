@@ -19,87 +19,95 @@ import styles from "./EventsPage.module.scss";
 let PageSize = 10;
 
 export const EventsPage = () => {
-  const dispatch = useAppDispatch();
+	const dispatch = useAppDispatch();
 
-  const { lectures, filters } = useSelector(lecturesSelector);
-  const [view, setView] = useState<string>('lines');
-  const [currentPage, setCurrentPage] = useState<number>(1);
+	const { lectures, filters } = useSelector(lecturesSelector);
+	const [view, setView] = useState<string>("lines");
+	const [currentPage, setCurrentPage] = useState<number>(1);
 
-
-  const changeViewLines = () => {
-	setView('lines');
-  };
-  const changeViewTiles = () => {
-	setView('tiles');
-  };
-
-  useEffect(() => {
-	const getLectures = async () => {
-	  try {
-		dispatch(loading(true));
-		dispatch(fetchLectures(filters));
-	  } catch (error) {
-		console.log(error);
-		dispatch(loading(false));
-	  } finally {
-		dispatch(loading(false));
-	  }
+	const changeViewLines = () => {
+		setView("lines");
 	};
-	getLectures();
-  }, [filters]);
+	const changeViewTiles = () => {
+		setView("tiles");
+	};
 
-  const onChangeCategory = (value: string) => {
-	dispatch(setFilters({ category: value}));
-  };
-  const onChangeSort = (value: string) => {
-	dispatch(setFilters({ sort: value }));
-  };
-  const onChangeShow = (e: ChangeEvent<HTMLInputElement>) => {
-	dispatch(setFilters({ limit: e.target.value }));
-  };
+	useEffect(() => {
+		const getLectures = async () => {
+			try {
+				dispatch(loading(true));
+				dispatch(fetchLectures(filters));
+			} catch (error) {
+				console.log(error);
+				dispatch(loading(false));
+			} finally {
+				dispatch(loading(false));
+			}
+		};
+		getLectures();
+	}, [filters]);
 
-  const searchHandler = (e: ChangeEvent<HTMLInputElement>) => {
-	dispatch(setFilters({ search: e.target.value }));
-  };
+	const onChangeCategory = (value: string) => {
+		dispatch(setFilters({ category: value }));
+	};
+	const onChangeSort = (value: string) => {
+		dispatch(setFilters({ sort: value }));
+	};
+	const onChangeShow = (e: ChangeEvent<HTMLInputElement>) => {
+		dispatch(setFilters({ limit: e.target.value }));
+	};
 
-  const currentTableData = useMemo(() => {
-	const firstPageIndex = (currentPage - 1) * PageSize;
-	const lastPageIndex = firstPageIndex + PageSize;
-	return lectures.slice(firstPageIndex, lastPageIndex);
-  }, [currentPage]);
+	const searchHandler = (e: ChangeEvent<HTMLInputElement>) => {
+		dispatch(setFilters({ search: e.target.value }));
+	};
 
-  return (
-	<>
-	<section className={styles.eventPage}>
-	  <div className="container">
-		<Title text="Our events" center={true} />
-		<Subtitle text="Lectures, workshops & master-classes" center={true} />
-		<div className={styles.filters}>
-		  <CustomSelect title="Event category" selectList={CATEGORY_EVENTS} onChange={(value) => onChangeCategory(value)}/>
-		  <CustomSelect title="Sort" selectList={SORT_EVENTS} onChange={(value) => onChangeSort(value)} />
-		  <CustomInputShow title="Show" limit={filters.limit} onChange={onChangeShow} />
-		  <CustomInputSearch value={filters.search} onChange={(e) => searchHandler(e)} />
-		  <div className="buttonsViews">
-			<button onClick={changeViewLines}><Icon size={16} color="#424551" name="lines" /></button>
-			<button onClick={changeViewTiles}><Icon size={16} color="#424551" name="tiles" /></button>
-		  </div>
-		</div>
-		<div className={styles.wrapper}>
-		  {lectures?.map((item) => (
-			<LectureCard key={item.id} item={item} view={view} />
-		  ))}
-		</div>
-	  </div>
+	const currentTableData = useMemo(() => {
+		const firstPageIndex = (currentPage - 1) * PageSize;
+		const lastPageIndex = firstPageIndex + PageSize;
+		return lectures.slice(firstPageIndex, lastPageIndex);
+	}, [currentPage]);
 
-	  <Pagination
-		currentPage={currentPage}
-		className="pagination-bar"
-		totalCount={lectures.length}
-		pageSize={PageSize}
-		onPageChange={page => setCurrentPage(page)}
-	  />
-	</section>
-	  <Subscribe />
-	</>
-  );
+	return (
+		<>
+			<section className={styles.eventPage}>
+				<div className="container">
+					<Title text="Our events" center={true} />
+					<Subtitle text="Lectures, workshops & master-classes" center={true} />
+					<div className={styles.filters}>
+						<CustomSelect title="Event category" selectList={CATEGORY_EVENTS}
+									  onChange={(value) => onChangeCategory(value)} />
+						<CustomSelect title="Sort" selectList={SORT_EVENTS} onChange={(value) => onChangeSort(value)} />
+						<CustomInputShow title="Show" limit={filters.limit} onChange={onChangeShow} />
+						<CustomInputSearch value={filters.search} onChange={(e) => searchHandler(e)} />
+						<div className={styles.buttonsViews}>
+							<button className={view === "lines" ? "is-active" : ""} onClick={changeViewLines}><Icon
+								size={16}
+								color={view === "lines" ? "red" : "#424551"}
+								name="lines" />
+							</button>
+							<button className={view === "tiles" ? "is-active" : ""} onClick={changeViewTiles}><Icon
+								size={16}
+								color={view === "tiles" ? "red" : "#424551"}
+								name="tiles" />
+							</button>
+						</div>
+					</div>
+					<div className={styles.wrapper}>
+						{lectures?.map((item) => (
+							<LectureCard key={item.id} item={item} view={view} />
+						))}
+					</div>
+				</div>
+
+				<Pagination
+					currentPage={currentPage}
+					className="pagination-bar"
+					totalCount={lectures.length}
+					pageSize={PageSize}
+					onPageChange={page => setCurrentPage(page)}
+				/>
+			</section>
+			<Subscribe />
+		</>
+	);
 };

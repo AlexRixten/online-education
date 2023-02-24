@@ -9,7 +9,7 @@
     @apply mt-10 flex flex-wrap justify-between -xl:justify-center -xl:gap-10;
   }
 
-  .buttonsViews{
-    @apply text-xs;
+  .buttonsViews {
+    @apply w-full h-[20px] flex items-center justify-around;
   }
 }
