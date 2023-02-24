@@ -1,0 +1,10 @@
+label{
+  @apply flex items-center justify-between;
+}
+.inputShow{
+  @apply w-[72px] h-[44px] bg-white border-2 border-solid border-[#D7DADD] rounded p-4;
+}
+
+span{
+  @apply text-xs leading-[150%] font-normal text-[#787A80];
+}
