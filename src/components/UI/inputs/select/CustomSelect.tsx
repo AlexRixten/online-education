@@ -6,7 +6,7 @@ import styles from './CustomSelect.module.scss'
 interface IProps {
   selectList: ICustomSelect[];
   title: string;
-  onChange?: (value: string) => void;
+  onChange: (value: string) => void;
 }
 
 export const CustomSelect = (props: IProps) => {
@@ -17,7 +17,6 @@ export const CustomSelect = (props: IProps) => {
 		className={styles.select}
 		defaultValue={props.selectList[0]}
 		options={props.selectList}
-		isClearable
 		// @ts-ignore
 		onChange={( option) => props.onChange( option.value )}
 	  />
