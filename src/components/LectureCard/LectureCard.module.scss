@@ -5,7 +5,7 @@
   }
 
   &.tiles {
-    @apply flex flex-col items-start justify-center max-w-[390px];
+    @apply flex flex-col items-start justify-center max-w-[390px] gap-5;
   }
 
   &:hover {
