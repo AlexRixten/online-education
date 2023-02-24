@@ -1,0 +1,16 @@
+.labelSearch {
+  @apply flex items-center justify-between;
+  position: relative;
+
+  input {
+    @apply w-full h-[44px] bg-white border-2 border-solid border-[#D7DADD] rounded p-4;
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+  }
+}
+

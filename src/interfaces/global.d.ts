@@ -3,4 +3,5 @@ export interface IParameters {
   limit?: number;
   category?: number;
   sort?: string;
+  search?: string;
 }
