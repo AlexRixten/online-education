@@ -1,4 +1,5 @@
 import { ERoutes } from "../enums/routes.enum";
+import { ETags } from "../enums/tags.enum";
 
 export const NAV_LINK = [
   {
@@ -108,7 +109,35 @@ export const CATEGORY_EVENTS = [
   { value: '3', label: 'Online lecture' },
   { value: '4', label: 'Online workshop' }
 ]
+
 export const SORT_EVENTS = [
   { value: 'asc', label: 'newest' },
   { value: 'desc', label: 'oldest' },
+]
+
+export const TAGS = [
+	{
+		id:1,
+		title: ETags.ALL,
+	},
+	{
+		id:2,
+		title: ETags.MARKETING,
+	},
+	{
+		id:3,
+		title: ETags.RECRUTING,
+	},
+	{
+		id:4,
+		title: ETags.DESIGN,
+	},
+	{
+		id:5,
+		title: ETags.DEVELOPMENT,
+	},
+	{
+		id:6,
+		title: ETags.MANAGEMENT,
+	},
 ]
