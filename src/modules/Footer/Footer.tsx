@@ -65,7 +65,7 @@ export const Footer = () => {
 							))}
 						</ul>
 
-						<div className="sighUp">
+						<div className={styles.sighUp}>
 							<label className="scs">SIGN UP TO OUR NEWSLETTER
 								<input type="text" placeholder="Email address" />
 								<Icon size={18} color="#FFFFFF" name="arrowNext" />
