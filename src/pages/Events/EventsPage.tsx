@@ -78,7 +78,7 @@ export const EventsPage = () => {
 									  onChange={(value) => onChangeCategory(value)} />
 						<CustomSelect title="Sort" selectList={SORT_EVENTS} onChange={(value) => onChangeSort(value)} />
 						<CustomInputShow title="Show" limit={filters.limit} onChange={onChangeShow} />
-						<CustomInputSearch value={filters.search} onChange={(e) => searchHandler(e)} />
+						<CustomInputSearch placeholder="Search event..." value={filters.search} onChange={(e) => searchHandler(e)} />
 						<div className={styles.buttonsViews}>
 							<button className={view === "lines" ? "is-active" : ""} onClick={changeViewLines}><Icon
 								size={16}
