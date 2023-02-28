@@ -15,6 +15,7 @@ import { CustomInputShow } from "../../components/UI/inputs/showInput/CustomInpu
 import { CATEGORY_EVENTS, SORT_EVENTS } from "../../mockData";
 import { CustomInputSearch } from "../../components/UI/inputs/searchInput/CustomInputSearch";
 import styles from "./EventsPage.module.scss";
+import { useDebounce } from "../../hooks/useDebounce";
 
 let PageSize = 10;
 
@@ -24,6 +25,10 @@ export const EventsPage = () => {
 	const { lectures, filters } = useSelector(lecturesSelector);
 	const [view, setView] = useState<string>("lines");
 	const [currentPage, setCurrentPage] = useState<number>(1);
+
+	const debounceSearch = useDebounce((value: string) => {
+		setSearchValue(value);
+	}, 1000);
 
 	const changeViewLines = () => {
 		setView("lines");
@@ -78,7 +83,8 @@ export const EventsPage = () => {
 									  onChange={(value) => onChangeCategory(value)} />
 						<CustomSelect title="Sort" selectList={SORT_EVENTS} onChange={(value) => onChangeSort(value)} />
 						<CustomInputShow title="Show" limit={filters.limit} onChange={onChangeShow} />
-						<CustomInputSearch placeholder="Search event..." value={filters.search} onChange={(e) => searchHandler(e)} />
+						<CustomInputSearch placeholder="Search event..." value={filters.search}
+										   onChange={(e) => searchHandler(e)} />
 						<div className={styles.buttonsViews}>
 							<button className={view === "lines" ? "is-active" : ""} onClick={changeViewLines}><Icon
 								size={16}
