@@ -1,9 +1,9 @@
-import styles from "./CoursesPage.module.scss";
+import React from "react";
 import { Title } from "../../components/Title/Title";
 import { Subtitle } from "../../components/Subtitle/Subtitle";
-import React from "react";
 import { CustomInputSearch } from "../../components/UI/inputs/searchInput/CustomInputSearch";
 import FilterTags from "../../components/Tags/FilterTags/FilterTags";
+import styles from "./CoursesPage.module.scss";
 
 export const CoursesPage = () => {
 	return (
