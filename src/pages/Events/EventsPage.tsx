@@ -28,7 +28,7 @@ export const EventsPage = () => {
 
 	const debounceSearch = useDebounce((value: string) => {
 		setSearchValue(value);
-	}, 1000);
+	}, 10000);
 
 	const changeViewLines = () => {
 		setView("lines");
